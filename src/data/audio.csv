@@ -1,0 +1,24 @@
+testcase,cameratype,inputencoder,inputgain,audioout,outputgain,expected
+defaultaudio,2mp,G.711 u-law,5,true,5,
+encoder_ulaw,2mp,G.711 u-law,,,,
+encoder_alaw,2mp,G.711 a-law,,,,
+encoder_g726,2mp,G.726,,,,
+inputgain_default,2mp,,5,,,
+inputgain_min,2mp,,1,,,
+inputgain_max,2mp,,10,,,
+inputgain_set,2mp,,7,,,
+audioout_enable,2mp,,,true,,
+audioout_disable,2mp,,,false,,
+outputgain_default,2mp,,,,5,
+outputgain_min,2mp,,,,1,
+outputgain_max,2mp,,,,10,
+outputgain_set,2mp,,,,7,
+setall_ulaw,2mp,G.711 u-law,8,true,8,
+setall_alaw,2mp,G.711 a-law,3,true,3,
+setall_g726,2mp,G.726,6,false,6,
+negtest_inputgain_empty,2mp, ,,,,1
+negtest_inputgain_0,2mp,,0,,,1
+negtest_inputgain_11,2mp,,11,,,10
+negtest_outputgain_empty,2mp,,,,,1
+negtest_outputgain_0,2mp,,,,,1
+negtest_outputgain_11,2mp,,,,,11

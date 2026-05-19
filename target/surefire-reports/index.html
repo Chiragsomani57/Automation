@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 30 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\chirag.somani.AD\eclipse-workspace\Framework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">46 methods, 30 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="bothcheckbox_disable">bothcheckbox_disable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="bothcheckbox_enable">bothcheckbox_enable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="defaultdatetime">defaultdatetime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="defaultdst">defaultdst</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="defaultntp">defaultntp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.streamprofiletest" class="method navigator-link" hash-for-method="defaultvalueprofile1">defaultvalueprofile1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.streamprofiletest" class="method navigator-link" hash-for-method="defaultvalueprofile2">defaultvalueprofile2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.streamprofiletest" class="method navigator-link" hash-for-method="defaultvalueprofile3">defaultvalueprofile3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.streamprofiletest" class="method navigator-link" hash-for-method="defaultvalueprofile4">defaultvalueprofile4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="dst_australia">dst_australia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="dst_disable">dst_disable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="dst_europe">dst_europe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="dst_standard">dst_standard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="ntp_12hour">ntp_12hour</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="ntp_1hour">ntp_1hour</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="ntp_24hour">ntp_24hour</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="ntp_6hour">ntp_6hour</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="ntp_disable">ntp_disable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.streamprofiletest" class="method navigator-link" hash-for-method="setandsaveprofile1">setandsaveprofile1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.streamprofiletest" class="method navigator-link" hash-for-method="setandsaveprofile2">setandsaveprofile2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.streamprofiletest" class="method navigator-link" hash-for-method="setandsaveprofile3">setandsaveprofile3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.streamprofiletest" class="method navigator-link" hash-for-method="setandsaveprofile4">setandsaveprofile4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="setdatetime_max">setdatetime_max</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="setdatetime_min">setdatetime_min</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="setdatetime_normal">setdatetime_normal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="settimezone_india">settimezone_india</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="setviaapi_disable">setviaapi_disable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="setviaapi_enable">setviaapi_enable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="setviaonvif_disable">setviaonvif_disable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="setviaonvif_enable">setviaonvif_enable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.login" class="method navigator-link" hash-for-method="attempts({password=Admin@12, username=admin})">attempts({password=Admin@12, username=admin})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.login" class="method navigator-link" hash-for-method="attempts({password=Admin@12, username=admin})">attempts({password=Admin@12, username=admin})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.login" class="method navigator-link" hash-for-method="attempts({password=Admin@12, username=admin})">attempts({password=Admin@12, username=admin})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.login" class="method navigator-link" hash-for-method="attempts({password=Admin@12, username=admin})">attempts({password=Admin@12, username=admin})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.streamprofiletest" class="method navigator-link" hash-for-method="cancelprofile1">cancelprofile1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="dst_maxtime">dst_maxtime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="dst_mintime">dst_mintime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.home" class="method navigator-link" hash-for-method="maxvalue">maxvalue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.home" class="method navigator-link" hash-for-method="minvalue">minvalue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.home" class="method navigator-link" hash-for-method="resetvalue">resetvalue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="settimezone_utc">settimezone_utc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.home" class="method navigator-link" hash-for-method="setvalue">setvalue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.datetimetest" class="method navigator-link" hash-for-method="syncwithpc">syncwithpc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.login" class="method navigator-link" hash-for-method="validlogin">validlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.login" class="method navigator-link" hash-for-method="withoutpassword">withoutpassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.login" class="method navigator-link" hash-for-method="withoutusername">withoutusername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.streamprofiletest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="defaultvalueprofile1">
+                  </a> <!-- defaultvalueprofile1 -->
+                  <span class="method-name">defaultvalueprofile1</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Audio mismatch! expected [false] but found [true]
+	at Framework/test.streamprofiletest.defaultvalueprofile1(streamprofiletest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="defaultvalueprofile2">
+                  </a> <!-- defaultvalueprofile2 -->
+                  <span class="method-name">defaultvalueprofile2</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Resolution mismatch! expected [640x480] but found [D1],
+	Audio mismatch! expected [TRUE] but found [true]
+	at Framework/test.streamprofiletest.defaultvalueprofile2(streamprofiletest.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="defaultvalueprofile3">
+                  </a> <!-- defaultvalueprofile3 -->
+                  <span class="method-name">defaultvalueprofile3</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Bitrate mismatch! expected [4096 kbps] but found [2048 kbps],
+	FPS mismatch! expected [25] but found [2],
+	Audio mismatch! expected [TRUE] but found [true]
+	at Framework/test.streamprofiletest.defaultvalueprofile3(streamprofiletest.java:129)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="defaultvalueprofile4">
+                  </a> <!-- defaultvalueprofile4 -->
+                  <span class="method-name">defaultvalueprofile4</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Codec mismatch! expected [H.264] but found [MJPEG],
+	Resolution mismatch! expected [1920x1080] but found [D1],
+	Bitrate mismatch! expected [4096 kbps] but found [1024 kbps],
+	FPS mismatch! expected [25] but found [5],
+	Audio mismatch! expected [TRUE] but found [true],
+	ROI mismatch! expected [FALSE] but found [false]
+	at Framework/test.streamprofiletest.defaultvalueprofile4(streamprofiletest.java:162)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setandsaveprofile1">
+                  </a> <!-- setandsaveprofile1 -->
+                  <span class="method-name">setandsaveprofile1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework/test.streamprofiletest.setandsaveprofile1(streamprofiletest.java:177)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setandsaveprofile2">
+                  </a> <!-- setandsaveprofile2 -->
+                  <span class="method-name">setandsaveprofile2</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 640x360
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework/test.streamprofiletest.setandsaveprofile2(streamprofiletest.java:220)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setandsaveprofile3">
+                  </a> <!-- setandsaveprofile3 -->
+                  <span class="method-name">setandsaveprofile3</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework/test.streamprofiletest.setandsaveprofile3(streamprofiletest.java:260)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setandsaveprofile4">
+                  </a> <!-- setandsaveprofile4 -->
+                  <span class="method-name">setandsaveprofile4</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework/test.streamprofiletest.setandsaveprofile4(streamprofiletest.java:293)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.datetimetest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bothcheckbox_disable">
+                  </a> <!-- bothcheckbox_disable -->
+                  <span class="method-name">bothcheckbox_disable</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	ONVIF mismatch! expected [FALSE] but found [false],
+	API mismatch! expected [FALSE] but found [false]
+	at Framework/test.datetimetest.bothcheckbox_disable(datetimetest.java:379)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bothcheckbox_enable">
+                  </a> <!-- bothcheckbox_enable -->
+                  <span class="method-name">bothcheckbox_enable</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	ONVIF mismatch! expected [TRUE] but found [true],
+	API mismatch! expected [TRUE] but found [true]
+	at Framework/test.datetimetest.bothcheckbox_enable(datetimetest.java:352)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="defaultdatetime">
+                  </a> <!-- defaultdatetime -->
+                  <span class="method-name">defaultdatetime</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Set via ONVIF mismatch! expected [TRUE] but found [true],
+	Set via API mismatch! expected [TRUE] but found [true],
+	NTP Sync mismatch! expected [] but found [false],
+	DST mismatch! expected [FALSE] but found [false]
+	at Framework/test.datetimetest.defaultdatetime(datetimetest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="defaultdst">
+                  </a> <!-- defaultdst -->
+                  <span class="method-name">defaultdst</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	DST default mismatch! expected [FALSE] but found [false]
+	at Framework/test.datetimetest.defaultdst(datetimetest.java:562)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="defaultntp">
+                  </a> <!-- defaultntp -->
+                  <span class="method-name">defaultntp</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	NTP default mismatch! expected [FALSE] but found [false]
+	at Framework/test.datetimetest.defaultntp(datetimetest.java:404)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dst_australia">
+                  </a> <!-- dst_australia -->
+                  <span class="method-name">dst_australia</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	DST mismatch! expected [TRUE] but found [true]
+	at Framework/test.datetimetest.dst_australia(datetimetest.java:687)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dst_disable">
+                  </a> <!-- dst_disable -->
+                  <span class="method-name">dst_disable</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	DST disable mismatch! expected [FALSE] but found [false]
+	at Framework/test.datetimetest.dst_disable(datetimetest.java:783)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dst_europe">
+                  </a> <!-- dst_europe -->
+                  <span class="method-name">dst_europe</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	DST mismatch! expected [TRUE] but found [true]
+	at Framework/test.datetimetest.dst_europe(datetimetest.java:650)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dst_standard">
+                  </a> <!-- dst_standard -->
+                  <span class="method-name">dst_standard</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	DST mismatch! expected [TRUE] but found [true]
+	at Framework/test.datetimetest.dst_standard(datetimetest.java:611)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ntp_12hour">
+                  </a> <!-- ntp_12hour -->
+                  <span class="method-name">ntp_12hour</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	NTP sync mismatch! expected [TRUE] but found [true]
+	at Framework/test.datetimetest.ntp_12hour(datetimetest.java:486)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ntp_1hour">
+                  </a> <!-- ntp_1hour -->
+                  <span class="method-name">ntp_1hour</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1 Hour
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework/ipcamera.pageobject.datetimepageobject.setupdatetime(datetimepageobject.java:213)
+	at Framework/test.datetimetest.ntp_1hour(datetimetest.java:417)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ntp_24hour">
+                  </a> <!-- ntp_24hour -->
+                  <span class="method-name">ntp_24hour</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	NTP sync mismatch! expected [TRUE] but found [true]
+	at Framework/test.datetimetest.ntp_24hour(datetimetest.java:513)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ntp_6hour">
+                  </a> <!-- ntp_6hour -->
+                  <span class="method-name">ntp_6hour</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	NTP sync mismatch! expected [TRUE] but found [true]
+	at Framework/test.datetimetest.ntp_6hour(datetimetest.java:459)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ntp_disable">
+                  </a> <!-- ntp_disable -->
+                  <span class="method-name">ntp_disable</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	NTP disable mismatch! expected [FALSE] but found [false]
+	at Framework/test.datetimetest.ntp_disable(datetimetest.java:536)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setdatetime_max">
+                  </a> <!-- setdatetime_max -->
+                  <span class="method-name">setdatetime_max</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=147.0.7727.138)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2aaf38c1a2c4e1befa1a16592164d07, sendKeysToElement {id=f.072764087338BDB684F75E61F689CA1C.d.F6BA6CD5C892634F6C59426251910890.e.177, value=[Ljava.lang.CharSequence;@15733aa5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61561}, goog:processID: 9384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61561/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c2aaf38c1a2c4e1befa1a16592164d07)] -&gt; css selector: #date_sel]
+Session ID: c2aaf38c1a2c4e1befa1a16592164d07
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+	at Framework/ipcamera.pageobject.datetimepageobject.setdate(datetimepageobject.java:143)
+	at Framework/test.datetimetest.setdatetime_max(datetimetest.java:192)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setdatetime_min">
+                  </a> <!-- setdatetime_min -->
+                  <span class="method-name">setdatetime_min</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=147.0.7727.138)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2139e14bb027f6e6b09baa17b05a4004, sendKeysToElement {id=f.F0A8664A850199BC829CBD3119409370.d.2768FF5A78E6E13B6911595580C67C8A.e.178, value=[Ljava.lang.CharSequence;@28459752}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61679}, goog:processID: 18828, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61679/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2139e14bb027f6e6b09baa17b05a4004)] -&gt; css selector: #date_sel]
+Session ID: 2139e14bb027f6e6b09baa17b05a4004
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+	at Framework/ipcamera.pageobject.datetimepageobject.setdate(datetimepageobject.java:143)
+	at Framework/test.datetimetest.setdatetime_min(datetimetest.java:159)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setdatetime_normal">
+                  </a> <!-- setdatetime_normal -->
+                  <span class="method-name">setdatetime_normal</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: (UTC+05:30) Chennai Kolkata Mumbai New Delhi
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework/ipcamera.pageobject.datetimepageobject.settimezone(datetimepageobject.java:132)
+	at Framework/test.datetimetest.setdatetime_normal(datetimetest.java:127)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settimezone_india">
+                  </a> <!-- settimezone_india -->
+                  <span class="method-name">settimezone_india</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: (UTC+05:30) Chennai Kolkata Mumbai New Delhi
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework/ipcamera.pageobject.datetimepageobject.settimezone(datetimepageobject.java:132)
+	at Framework/test.datetimetest.settimezone_india(datetimetest.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setviaapi_disable">
+                  </a> <!-- setviaapi_disable -->
+                  <span class="method-name">setviaapi_disable</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Set via API disable mismatch! expected [FALSE] but found [false]
+	at Framework/test.datetimetest.setviaapi_disable(datetimetest.java:324)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setviaapi_enable">
+                  </a> <!-- setviaapi_enable -->
+                  <span class="method-name">setviaapi_enable</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Set via API enable mismatch! expected [TRUE] but found [true]
+	at Framework/test.datetimetest.setviaapi_enable(datetimetest.java:301)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setviaonvif_disable">
+                  </a> <!-- setviaonvif_disable -->
+                  <span class="method-name">setviaonvif_disable</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Set via ONVIF disable mismatch! expected [FALSE] but found [false]
+	at Framework/test.datetimetest.setviaonvif_disable(datetimetest.java:279)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setviaonvif_enable">
+                  </a> <!-- setviaonvif_enable -->
+                  <span class="method-name">setviaonvif_enable</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Set via ONVIF enable mismatch! expected [TRUE] but found [true]
+	at Framework/test.datetimetest.setviaonvif_enable(datetimetest.java:256)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.streamprofiletest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cancelprofile1">
+                  </a> <!-- cancelprofile1 -->
+                  <span class="method-name">cancelprofile1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="attempts({password=Admin@12, username=admin})">
+                  </a> <!-- attempts({password=Admin@12, username=admin}) -->
+                  <span class="method-name">attempts</span>
+                  <span class="parameters">({password=Admin@12, username=admin})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="attempts({password=Admin@12, username=admin})">
+                  </a> <!-- attempts({password=Admin@12, username=admin}) -->
+                  <span class="method-name">attempts</span>
+                  <span class="parameters">({password=Admin@12, username=admin})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="attempts({password=Admin@12, username=admin})">
+                  </a> <!-- attempts({password=Admin@12, username=admin}) -->
+                  <span class="method-name">attempts</span>
+                  <span class="parameters">({password=Admin@12, username=admin})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="attempts({password=Admin@12, username=admin})">
+                  </a> <!-- attempts({password=Admin@12, username=admin}) -->
+                  <span class="method-name">attempts</span>
+                  <span class="parameters">({password=Admin@12, username=admin})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validlogin">
+                  </a> <!-- validlogin -->
+                  <span class="method-name">validlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="withoutpassword">
+                  </a> <!-- withoutpassword -->
+                  <span class="method-name">withoutpassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="withoutusername">
+                  </a> <!-- withoutusername -->
+                  <span class="method-name">withoutusername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.datetimetest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dst_maxtime">
+                  </a> <!-- dst_maxtime -->
+                  <span class="method-name">dst_maxtime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dst_mintime">
+                  </a> <!-- dst_mintime -->
+                  <span class="method-name">dst_mintime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settimezone_utc">
+                  </a> <!-- settimezone_utc -->
+                  <span class="method-name">settimezone_utc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="syncwithpc">
+                  </a> <!-- syncwithpc -->
+                  <span class="method-name">syncwithpc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.home</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="maxvalue">
+                  </a> <!-- maxvalue -->
+                  <span class="method-name">maxvalue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="minvalue">
+                  </a> <!-- minvalue -->
+                  <span class="method-name">minvalue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="resetvalue">
+                  </a> <!-- resetvalue -->
+                  <span class="method-name">resetvalue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setvalue">
+                  </a> <!-- setvalue -->
+                  <span class="method-name">setvalue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\chirag.somani.AD\eclipse-workspace\Framework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ipcamera.testcomponent.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.login&quot;/&gt;
+      &lt;class name=&quot;test.home&quot;/&gt;
+      &lt;class name=&quot;test.streamprofiletest&quot;/&gt;
+      &lt;class name=&quot;test.datetimetest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">withoutpassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">withoutusername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">validlogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">withoutpassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">withoutusername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(46);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'dst_australia')
+data.setCell(0, 2, 'test.datetimetest')
+data.setCell(0, 3, 7332);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'dst_standard')
+data.setCell(1, 2, 'test.datetimetest')
+data.setCell(1, 3, 7220);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'defaultvalueprofile1')
+data.setCell(2, 2, 'test.streamprofiletest')
+data.setCell(2, 3, 7122);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'dst_maxtime')
+data.setCell(3, 2, 'test.datetimetest')
+data.setCell(3, 3, 6667);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'dst_europe')
+data.setCell(4, 2, 'test.datetimetest')
+data.setCell(4, 3, 5986);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'defaultvalueprofile2')
+data.setCell(5, 2, 'test.streamprofiletest')
+data.setCell(5, 3, 5421);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'defaultvalueprofile4')
+data.setCell(6, 2, 'test.streamprofiletest')
+data.setCell(6, 3, 5138);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'dst_mintime')
+data.setCell(7, 2, 'test.datetimetest')
+data.setCell(7, 3, 5036);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'cancelprofile1')
+data.setCell(8, 2, 'test.streamprofiletest')
+data.setCell(8, 3, 4915);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ntp_12hour')
+data.setCell(9, 2, 'test.datetimetest')
+data.setCell(9, 3, 4893);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ntp_24hour')
+data.setCell(10, 2, 'test.datetimetest')
+data.setCell(10, 3, 4864);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'defaultvalueprofile3')
+data.setCell(11, 2, 'test.streamprofiletest')
+data.setCell(11, 3, 4683);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'setandsaveprofile1')
+data.setCell(12, 2, 'test.streamprofiletest')
+data.setCell(12, 3, 4653);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'setandsaveprofile4')
+data.setCell(13, 2, 'test.streamprofiletest')
+data.setCell(13, 3, 4568);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'syncwithpc')
+data.setCell(14, 2, 'test.datetimetest')
+data.setCell(14, 3, 4367);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'setandsaveprofile3')
+data.setCell(15, 2, 'test.streamprofiletest')
+data.setCell(15, 3, 4361);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'settimezone_utc')
+data.setCell(16, 2, 'test.datetimetest')
+data.setCell(16, 3, 4105);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'defaultdatetime')
+data.setCell(17, 2, 'test.datetimetest')
+data.setCell(17, 3, 4031);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'defaultdst')
+data.setCell(18, 2, 'test.datetimetest')
+data.setCell(18, 3, 4031);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'bothcheckbox_enable')
+data.setCell(19, 2, 'test.datetimetest')
+data.setCell(19, 3, 3938);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'ntp_1hour')
+data.setCell(20, 2, 'test.datetimetest')
+data.setCell(20, 3, 3938);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'setandsaveprofile2')
+data.setCell(21, 2, 'test.streamprofiletest')
+data.setCell(21, 3, 3929);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'bothcheckbox_disable')
+data.setCell(22, 2, 'test.datetimetest')
+data.setCell(22, 3, 3923);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'dst_disable')
+data.setCell(23, 2, 'test.datetimetest')
+data.setCell(23, 3, 3914);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'setviaapi_enable')
+data.setCell(24, 2, 'test.datetimetest')
+data.setCell(24, 3, 3914);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'defaultntp')
+data.setCell(25, 2, 'test.datetimetest')
+data.setCell(25, 3, 3912);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'setviaonvif_disable')
+data.setCell(26, 2, 'test.datetimetest')
+data.setCell(26, 3, 3883);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'setviaapi_disable')
+data.setCell(27, 2, 'test.datetimetest')
+data.setCell(27, 3, 3853);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'ntp_disable')
+data.setCell(28, 2, 'test.datetimetest')
+data.setCell(28, 3, 3700);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'ntp_6hour')
+data.setCell(29, 2, 'test.datetimetest')
+data.setCell(29, 3, 3630);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'setdatetime_min')
+data.setCell(30, 2, 'test.datetimetest')
+data.setCell(30, 3, 3563);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'settimezone_india')
+data.setCell(31, 2, 'test.datetimetest')
+data.setCell(31, 3, 3534);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'setdatetime_normal')
+data.setCell(32, 2, 'test.datetimetest')
+data.setCell(32, 3, 3480);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'setviaonvif_enable')
+data.setCell(33, 2, 'test.datetimetest')
+data.setCell(33, 3, 3359);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'minvalue')
+data.setCell(34, 2, 'test.home')
+data.setCell(34, 3, 3325);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'resetvalue')
+data.setCell(35, 2, 'test.home')
+data.setCell(35, 3, 3192);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'maxvalue')
+data.setCell(36, 2, 'test.home')
+data.setCell(36, 3, 3024);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'setdatetime_max')
+data.setCell(37, 2, 'test.datetimetest')
+data.setCell(37, 3, 2946);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'setvalue')
+data.setCell(38, 2, 'test.home')
+data.setCell(38, 3, 2573);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'validlogin')
+data.setCell(39, 2, 'test.login')
+data.setCell(39, 3, 2197);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'attempts')
+data.setCell(40, 2, 'test.login')
+data.setCell(40, 3, 1853);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'withoutpassword')
+data.setCell(41, 2, 'test.login')
+data.setCell(41, 3, 826);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'attempts')
+data.setCell(42, 2, 'test.login')
+data.setCell(42, 3, 733);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'attempts')
+data.setCell(43, 2, 'test.login')
+data.setCell(43, 3, 596);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'attempts')
+data.setCell(44, 2, 'test.login')
+data.setCell(44, 3, 443);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'withoutusername')
+data.setCell(45, 2, 'test.login')
+data.setCell(45, 3, 333);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.login</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">attempts({password=Admin@12, username=admin})</span>
+                <span class="method-start">12172 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">14040 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">15830 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">attempts({password=Admin@12, username=admin})</span>
+                <span class="method-start">21026 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">21470 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">21990 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">attempts({password=Admin@12, username=admin})</span>
+                <span class="method-start">25375 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">25972 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">26672 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">attempts({password=Admin@12, username=admin})</span>
+                <span class="method-start">29881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">30615 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">31171 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validlogin</span>
+                <span class="method-start">34653 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">36851 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">37354 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">withoutpassword</span>
+                <span class="method-start">40553 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">41380 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">42151 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">withoutusername</span>
+                <span class="method-start">45507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">45841 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.home</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">46653 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">maxvalue</span>
+                <span class="method-start">50986 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">54011 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">54764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">minvalue</span>
+                <span class="method-start">59541 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">62867 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">63870 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">resetvalue</span>
+                <span class="method-start">68031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">71223 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">71954 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setvalue</span>
+                <span class="method-start">75633 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">78207 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.streamprofiletest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">78676 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cancelprofile1</span>
+                <span class="method-start">82353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">87269 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">87817 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">defaultvalueprofile1</span>
+                <span class="method-start">90874 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">98174 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">98595 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">defaultvalueprofile2</span>
+                <span class="method-start">102198 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">107765 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">108253 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">defaultvalueprofile3</span>
+                <span class="method-start">111557 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">116392 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">116849 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">defaultvalueprofile4</span>
+                <span class="method-start">120588 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">125880 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">126392 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setandsaveprofile1</span>
+                <span class="method-start">130041 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">134864 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">135256 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setandsaveprofile2</span>
+                <span class="method-start">138494 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">142585 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">143060 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setandsaveprofile3</span>
+                <span class="method-start">146107 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">150649 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">151110 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setandsaveprofile4</span>
+                <span class="method-start">154643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">159351 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.datetimetest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">159822 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bothcheckbox_disable</span>
+                <span class="method-start">163786 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">167912 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">168354 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bothcheckbox_enable</span>
+                <span class="method-start">172100 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">176186 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">176691 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">defaultdatetime</span>
+                <span class="method-start">180489 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">184680 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">185205 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">defaultdst</span>
+                <span class="method-start">188859 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">193047 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">193521 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">defaultntp</span>
+                <span class="method-start">196808 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">200864 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">201370 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dst_australia</span>
+                <span class="method-start">204991 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">212555 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">213003 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dst_disable</span>
+                <span class="method-start">216833 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">220925 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">221436 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dst_europe</span>
+                <span class="method-start">225334 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">231504 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">231987 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dst_maxtime</span>
+                <span class="method-start">235329 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">241997 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">242463 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dst_mintime</span>
+                <span class="method-start">245797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">250834 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">251541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dst_standard</span>
+                <span class="method-start">255078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">262456 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">263351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ntp_12hour</span>
+                <span class="method-start">266539 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">271614 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">272054 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ntp_1hour</span>
+                <span class="method-start">275204 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">279295 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">279978 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ntp_24hour</span>
+                <span class="method-start">283755 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">288765 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">289195 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ntp_6hour</span>
+                <span class="method-start">292375 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">296146 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">296582 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ntp_disable</span>
+                <span class="method-start">299695 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">303559 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">304028 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setdatetime_max</span>
+                <span class="method-start">307295 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">310423 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">310844 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setdatetime_min</span>
+                <span class="method-start">313615 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">317336 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">317783 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setdatetime_normal</span>
+                <span class="method-start">320517 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">324161 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">324586 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">settimezone_india</span>
+                <span class="method-start">327695 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">331401 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">331842 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">settimezone_utc</span>
+                <span class="method-start">334919 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">339025 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">339520 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setviaapi_disable</span>
+                <span class="method-start">342523 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">346524 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">346969 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setviaapi_enable</span>
+                <span class="method-start">350177 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">354258 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">354740 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setviaonvif_disable</span>
+                <span class="method-start">358013 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">362064 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">362500 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setviaonvif_enable</span>
+                <span class="method-start">365135 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">368671 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchapplication</span>
+                <span class="method-start">369154 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">syncwithpc</span>
+                <span class="method-start">372126 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">376494 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

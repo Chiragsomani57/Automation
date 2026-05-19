@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="test.hometest">
+        <methods>
+          <include name="hue_default"/>
+          <include name="setall_default"/>
+          <include name="brightness_default"/>
+          <include name="launchapplication"/>
+          <include name="saturation_set"/>
+          <include name="setall_min"/>
+          <include name="setall_normal"/>
+          <include name="setall_max"/>
+          <include name="defaultvalue"/>
+          <include name="teardown"/>
+          <include name="saturation_default"/>
+          <include name="contrast_default"/>
+        </methods>
+      </class> <!-- test.hometest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

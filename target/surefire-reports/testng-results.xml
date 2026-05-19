@@ -1,0 +1,2061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="46" passed="16" failed="30" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-07T12:17:12 IST" name="Suite" finished-at="2026-05-07T12:23:29 IST" duration-ms="377017">
+    <groups>
+      <group name="regression">
+        <method signature="login.withoutpassword()[pri:0, instance:test.login@62e20a76]" name="withoutpassword" class="test.login"/>
+        <method signature="login.withoutusername()[pri:0, instance:test.login@62e20a76]" name="withoutusername" class="test.login"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="login.validlogin()[pri:0, instance:test.login@62e20a76]" name="validlogin" class="test.login"/>
+        <method signature="login.withoutpassword()[pri:0, instance:test.login@62e20a76]" name="withoutpassword" class="test.login"/>
+        <method signature="login.withoutusername()[pri:0, instance:test.login@62e20a76]" name="withoutusername" class="test.login"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2026-05-07T12:17:12 IST" name="test" finished-at="2026-05-07T12:23:29 IST" duration-ms="377017">
+      <class name="test.streamprofiletest">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:18:31 IST" name="launchapplication" finished-at="2026-05-07T12:18:34 IST" duration-ms="3677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="cancelprofile1()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:18:34 IST" name="cancelprofile1" finished-at="2026-05-07T12:18:39 IST" duration-ms="4915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelprofile1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:18:39 IST" name="teardown" finished-at="2026-05-07T12:18:40 IST" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:18:40 IST" name="launchapplication" finished-at="2026-05-07T12:18:43 IST" duration-ms="3057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="defaultvalueprofile1()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:18:43 IST" name="defaultvalueprofile1" finished-at="2026-05-07T12:18:50 IST" duration-ms="7122" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Audio mismatch! expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Audio mismatch! expected [false] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.streamprofiletest.defaultvalueprofile1(streamprofiletest.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultvalueprofile1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:18:50 IST" name="teardown" finished-at="2026-05-07T12:18:51 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:18:51 IST" name="launchapplication" finished-at="2026-05-07T12:18:54 IST" duration-ms="3603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="defaultvalueprofile2()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:18:54 IST" name="defaultvalueprofile2" finished-at="2026-05-07T12:19:00 IST" duration-ms="5421" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Resolution mismatch! expected [640x480] but found [D1],
+Audio mismatch! expected [TRUE] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Resolution mismatch! expected [640x480] but found [D1],
+Audio mismatch! expected [TRUE] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.streamprofiletest.defaultvalueprofile2(streamprofiletest.java:99)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultvalueprofile2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:00 IST" name="teardown" finished-at="2026-05-07T12:19:00 IST" duration-ms="487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:00 IST" name="launchapplication" finished-at="2026-05-07T12:19:04 IST" duration-ms="3304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="defaultvalueprofile3()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:04 IST" name="defaultvalueprofile3" finished-at="2026-05-07T12:19:08 IST" duration-ms="4683" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Bitrate mismatch! expected [4096 kbps] but found [2048 kbps],
+FPS mismatch! expected [25] but found [2],
+Audio mismatch! expected [TRUE] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Bitrate mismatch! expected [4096 kbps] but found [2048 kbps],
+FPS mismatch! expected [25] but found [2],
+Audio mismatch! expected [TRUE] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.streamprofiletest.defaultvalueprofile3(streamprofiletest.java:129)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultvalueprofile3 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:09 IST" name="teardown" finished-at="2026-05-07T12:19:09 IST" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:09 IST" name="launchapplication" finished-at="2026-05-07T12:19:13 IST" duration-ms="3739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="defaultvalueprofile4()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:13 IST" name="defaultvalueprofile4" finished-at="2026-05-07T12:19:18 IST" duration-ms="5138" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Codec mismatch! expected [H.264] but found [MJPEG],
+Resolution mismatch! expected [1920x1080] but found [D1],
+Bitrate mismatch! expected [4096 kbps] but found [1024 kbps],
+FPS mismatch! expected [25] but found [5],
+Audio mismatch! expected [TRUE] but found [true],
+ROI mismatch! expected [FALSE] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Codec mismatch! expected [H.264] but found [MJPEG],
+Resolution mismatch! expected [1920x1080] but found [D1],
+Bitrate mismatch! expected [4096 kbps] but found [1024 kbps],
+FPS mismatch! expected [25] but found [5],
+Audio mismatch! expected [TRUE] but found [true],
+ROI mismatch! expected [FALSE] but found [false]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.streamprofiletest.defaultvalueprofile4(streamprofiletest.java:162)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultvalueprofile4 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:18 IST" name="teardown" finished-at="2026-05-07T12:19:19 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:19 IST" name="launchapplication" finished-at="2026-05-07T12:19:22 IST" duration-ms="3649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setandsaveprofile1()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:22 IST" name="setandsaveprofile1" finished-at="2026-05-07T12:19:27 IST" duration-ms="4653" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+at Framework/test.streamprofiletest.setandsaveprofile1(streamprofiletest.java:177)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setandsaveprofile1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:27 IST" name="teardown" finished-at="2026-05-07T12:19:27 IST" duration-ms="391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:27 IST" name="launchapplication" finished-at="2026-05-07T12:19:31 IST" duration-ms="3238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setandsaveprofile2()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:31 IST" name="setandsaveprofile2" finished-at="2026-05-07T12:19:35 IST" duration-ms="3929" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with text: 640x360
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 640x360
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+at Framework/test.streamprofiletest.setandsaveprofile2(streamprofiletest.java:220)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setandsaveprofile2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:35 IST" name="teardown" finished-at="2026-05-07T12:19:35 IST" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:35 IST" name="launchapplication" finished-at="2026-05-07T12:19:38 IST" duration-ms="3047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setandsaveprofile3()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:38 IST" name="setandsaveprofile3" finished-at="2026-05-07T12:19:43 IST" duration-ms="4361" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+at Framework/test.streamprofiletest.setandsaveprofile3(streamprofiletest.java:260)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setandsaveprofile3 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:43 IST" name="teardown" finished-at="2026-05-07T12:19:43 IST" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:43 IST" name="launchapplication" finished-at="2026-05-07T12:19:47 IST" duration-ms="3532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setandsaveprofile4()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:47 IST" name="setandsaveprofile4" finished-at="2026-05-07T12:19:51 IST" duration-ms="4568" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+at Framework/test.streamprofiletest.setandsaveprofile4(streamprofiletest.java:293)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setandsaveprofile4 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.streamprofiletest@542e560f]" started-at="2026-05-07T12:19:51 IST" name="teardown" finished-at="2026-05-07T12:19:52 IST" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.streamprofiletest -->
+      <class name="test.login">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:12 IST" name="launchapplication" finished-at="2026-05-07T12:17:24 IST" duration-ms="12171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="attempts(java.util.HashMap)[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:24 IST" name="attempts" data-provider="attepts" finished-at="2026-05-07T12:17:26 IST" duration-ms="1853" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Admin@12, username=admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attempts -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:26 IST" name="teardown" finished-at="2026-05-07T12:17:28 IST" duration-ms="1789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:28 IST" name="launchapplication" finished-at="2026-05-07T12:17:33 IST" duration-ms="5196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="attempts(java.util.HashMap)[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:33 IST" name="attempts" data-provider="attepts" finished-at="2026-05-07T12:17:34 IST" duration-ms="443" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Admin@12, username=admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attempts -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:34 IST" name="teardown" finished-at="2026-05-07T12:17:34 IST" duration-ms="520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:34 IST" name="launchapplication" finished-at="2026-05-07T12:17:38 IST" duration-ms="3385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="attempts(java.util.HashMap)[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:38 IST" name="attempts" data-provider="attepts" finished-at="2026-05-07T12:17:38 IST" duration-ms="596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Admin@12, username=admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attempts -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:38 IST" name="teardown" finished-at="2026-05-07T12:17:39 IST" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:39 IST" name="launchapplication" finished-at="2026-05-07T12:17:42 IST" duration-ms="3209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="attempts(java.util.HashMap)[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:42 IST" name="attempts" data-provider="attepts" finished-at="2026-05-07T12:17:43 IST" duration-ms="733" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Admin@12, username=admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attempts -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:43 IST" name="teardown" finished-at="2026-05-07T12:17:43 IST" duration-ms="553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:43 IST" name="launchapplication" finished-at="2026-05-07T12:17:47 IST" duration-ms="3482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="validlogin()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:47 IST" name="validlogin" finished-at="2026-05-07T12:17:49 IST" duration-ms="2197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validlogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:49 IST" name="teardown" finished-at="2026-05-07T12:17:49 IST" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:49 IST" name="launchapplication" finished-at="2026-05-07T12:17:53 IST" duration-ms="3199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="withoutpassword()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:53 IST" name="withoutpassword" finished-at="2026-05-07T12:17:54 IST" duration-ms="826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withoutpassword -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:54 IST" name="teardown" finished-at="2026-05-07T12:17:54 IST" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:54 IST" name="launchapplication" finished-at="2026-05-07T12:17:58 IST" duration-ms="3356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="withoutusername()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:58 IST" name="withoutusername" finished-at="2026-05-07T12:17:58 IST" duration-ms="333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withoutusername -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.login@62e20a76]" started-at="2026-05-07T12:17:58 IST" name="teardown" finished-at="2026-05-07T12:17:59 IST" duration-ms="810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.login -->
+      <class name="test.datetimetest">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:19:52 IST" name="launchapplication" finished-at="2026-05-07T12:19:56 IST" duration-ms="3964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="bothcheckbox_disable()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:19:56 IST" name="bothcheckbox_disable" finished-at="2026-05-07T12:20:00 IST" duration-ms="3923" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+ONVIF mismatch! expected [FALSE] but found [false],
+API mismatch! expected [FALSE] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+ONVIF mismatch! expected [FALSE] but found [false],
+API mismatch! expected [FALSE] but found [false]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.bothcheckbox_disable(datetimetest.java:379)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bothcheckbox_disable -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:00 IST" name="teardown" finished-at="2026-05-07T12:20:00 IST" duration-ms="441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:00 IST" name="launchapplication" finished-at="2026-05-07T12:20:04 IST" duration-ms="3743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="bothcheckbox_enable()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:04 IST" name="bothcheckbox_enable" finished-at="2026-05-07T12:20:08 IST" duration-ms="3938" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+ONVIF mismatch! expected [TRUE] but found [true],
+API mismatch! expected [TRUE] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+ONVIF mismatch! expected [TRUE] but found [true],
+API mismatch! expected [TRUE] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.bothcheckbox_enable(datetimetest.java:352)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bothcheckbox_enable -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:08 IST" name="teardown" finished-at="2026-05-07T12:20:09 IST" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:09 IST" name="launchapplication" finished-at="2026-05-07T12:20:13 IST" duration-ms="3797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="defaultdatetime()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:13 IST" name="defaultdatetime" finished-at="2026-05-07T12:20:17 IST" duration-ms="4031" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Set via ONVIF mismatch! expected [TRUE] but found [true],
+Set via API mismatch! expected [TRUE] but found [true],
+NTP Sync mismatch! expected [] but found [false],
+DST mismatch! expected [FALSE] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Set via ONVIF mismatch! expected [TRUE] but found [true],
+Set via API mismatch! expected [TRUE] but found [true],
+NTP Sync mismatch! expected [] but found [false],
+DST mismatch! expected [FALSE] but found [false]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.defaultdatetime(datetimetest.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultdatetime -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:17 IST" name="teardown" finished-at="2026-05-07T12:20:17 IST" duration-ms="524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:17 IST" name="launchapplication" finished-at="2026-05-07T12:20:21 IST" duration-ms="3654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="defaultdst()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:21 IST" name="defaultdst" finished-at="2026-05-07T12:20:25 IST" duration-ms="4031" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+DST default mismatch! expected [FALSE] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+DST default mismatch! expected [FALSE] but found [false]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.defaultdst(datetimetest.java:562)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultdst -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:25 IST" name="teardown" finished-at="2026-05-07T12:20:26 IST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:26 IST" name="launchapplication" finished-at="2026-05-07T12:20:29 IST" duration-ms="3287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="defaultntp()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:29 IST" name="defaultntp" finished-at="2026-05-07T12:20:33 IST" duration-ms="3912" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+NTP default mismatch! expected [FALSE] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+NTP default mismatch! expected [FALSE] but found [false]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.defaultntp(datetimetest.java:404)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultntp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:33 IST" name="teardown" finished-at="2026-05-07T12:20:34 IST" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:34 IST" name="launchapplication" finished-at="2026-05-07T12:20:37 IST" duration-ms="3621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="dst_australia()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:37 IST" name="dst_australia" finished-at="2026-05-07T12:20:44 IST" duration-ms="7332" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+DST mismatch! expected [TRUE] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+DST mismatch! expected [TRUE] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.dst_australia(datetimetest.java:687)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dst_australia -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:45 IST" name="teardown" finished-at="2026-05-07T12:20:45 IST" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:45 IST" name="launchapplication" finished-at="2026-05-07T12:20:49 IST" duration-ms="3830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="dst_disable()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:49 IST" name="dst_disable" finished-at="2026-05-07T12:20:53 IST" duration-ms="3914" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+DST disable mismatch! expected [FALSE] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+DST disable mismatch! expected [FALSE] but found [false]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.dst_disable(datetimetest.java:783)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dst_disable -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:53 IST" name="teardown" finished-at="2026-05-07T12:20:54 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:54 IST" name="launchapplication" finished-at="2026-05-07T12:20:57 IST" duration-ms="3898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="dst_europe()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:20:57 IST" name="dst_europe" finished-at="2026-05-07T12:21:03 IST" duration-ms="5986" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+DST mismatch! expected [TRUE] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+DST mismatch! expected [TRUE] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.dst_europe(datetimetest.java:650)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dst_europe -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:04 IST" name="teardown" finished-at="2026-05-07T12:21:04 IST" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:04 IST" name="launchapplication" finished-at="2026-05-07T12:21:07 IST" duration-ms="3342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="dst_maxtime()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:07 IST" name="dst_maxtime" finished-at="2026-05-07T12:21:14 IST" duration-ms="6667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dst_maxtime -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:14 IST" name="teardown" finished-at="2026-05-07T12:21:15 IST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:15 IST" name="launchapplication" finished-at="2026-05-07T12:21:18 IST" duration-ms="3334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="dst_mintime()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:18 IST" name="dst_mintime" finished-at="2026-05-07T12:21:23 IST" duration-ms="5036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dst_mintime -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:23 IST" name="teardown" finished-at="2026-05-07T12:21:24 IST" duration-ms="706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:24 IST" name="launchapplication" finished-at="2026-05-07T12:21:27 IST" duration-ms="3537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="dst_standard()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:27 IST" name="dst_standard" finished-at="2026-05-07T12:21:34 IST" duration-ms="7220" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+DST mismatch! expected [TRUE] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+DST mismatch! expected [TRUE] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.dst_standard(datetimetest.java:611)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dst_standard -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:35 IST" name="teardown" finished-at="2026-05-07T12:21:35 IST" duration-ms="894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:35 IST" name="launchapplication" finished-at="2026-05-07T12:21:39 IST" duration-ms="3188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="ntp_12hour()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:39 IST" name="ntp_12hour" finished-at="2026-05-07T12:21:44 IST" duration-ms="4893" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+NTP sync mismatch! expected [TRUE] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+NTP sync mismatch! expected [TRUE] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.ntp_12hour(datetimetest.java:486)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ntp_12hour -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:44 IST" name="teardown" finished-at="2026-05-07T12:21:44 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:44 IST" name="launchapplication" finished-at="2026-05-07T12:21:47 IST" duration-ms="3150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="ntp_1hour()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:47 IST" name="ntp_1hour" finished-at="2026-05-07T12:21:51 IST" duration-ms="3938" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with text: 1 Hour
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1 Hour
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+at Framework/ipcamera.pageobject.datetimepageobject.setupdatetime(datetimepageobject.java:213)
+at Framework/test.datetimetest.ntp_1hour(datetimetest.java:417)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ntp_1hour -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:51 IST" name="teardown" finished-at="2026-05-07T12:21:52 IST" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:52 IST" name="launchapplication" finished-at="2026-05-07T12:21:56 IST" duration-ms="3777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="ntp_24hour()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:21:56 IST" name="ntp_24hour" finished-at="2026-05-07T12:22:01 IST" duration-ms="4864" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+NTP sync mismatch! expected [TRUE] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+NTP sync mismatch! expected [TRUE] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.ntp_24hour(datetimetest.java:513)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ntp_24hour -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:01 IST" name="teardown" finished-at="2026-05-07T12:22:01 IST" duration-ms="430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:01 IST" name="launchapplication" finished-at="2026-05-07T12:22:05 IST" duration-ms="3179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="ntp_6hour()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:05 IST" name="ntp_6hour" finished-at="2026-05-07T12:22:08 IST" duration-ms="3630" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+NTP sync mismatch! expected [TRUE] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+NTP sync mismatch! expected [TRUE] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.ntp_6hour(datetimetest.java:459)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ntp_6hour -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:08 IST" name="teardown" finished-at="2026-05-07T12:22:09 IST" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:09 IST" name="launchapplication" finished-at="2026-05-07T12:22:12 IST" duration-ms="3112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="ntp_disable()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:12 IST" name="ntp_disable" finished-at="2026-05-07T12:22:16 IST" duration-ms="3700" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+NTP disable mismatch! expected [FALSE] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+NTP disable mismatch! expected [FALSE] but found [false]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.ntp_disable(datetimetest.java:536)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ntp_disable -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:16 IST" name="teardown" finished-at="2026-05-07T12:22:16 IST" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:16 IST" name="launchapplication" finished-at="2026-05-07T12:22:19 IST" duration-ms="3267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setdatetime_max()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:19 IST" name="setdatetime_max" finished-at="2026-05-07T12:22:22 IST" duration-ms="2946" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=147.0.7727.138)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2aaf38c1a2c4e1befa1a16592164d07, sendKeysToElement {id=f.072764087338BDB684F75E61F689CA1C.d.F6BA6CD5C892634F6C59426251910890.e.177, value=[Ljava.lang.CharSequence;@15733aa5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61561}, goog:processID: 9384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61561/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c2aaf38c1a2c4e1befa1a16592164d07)] -> css selector: #date_sel]
+Session ID: c2aaf38c1a2c4e1befa1a16592164d07]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=147.0.7727.138)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2aaf38c1a2c4e1befa1a16592164d07, sendKeysToElement {id=f.072764087338BDB684F75E61F689CA1C.d.F6BA6CD5C892634F6C59426251910890.e.177, value=[Ljava.lang.CharSequence;@15733aa5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61561}, goog:processID: 9384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61561/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c2aaf38c1a2c4e1befa1a16592164d07)] -> css selector: #date_sel]
+Session ID: c2aaf38c1a2c4e1befa1a16592164d07
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+at Framework/ipcamera.pageobject.datetimepageobject.setdate(datetimepageobject.java:143)
+at Framework/test.datetimetest.setdatetime_max(datetimetest.java:192)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdatetime_max -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:23 IST" name="teardown" finished-at="2026-05-07T12:22:23 IST" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:23 IST" name="launchapplication" finished-at="2026-05-07T12:22:26 IST" duration-ms="2771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setdatetime_min()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:26 IST" name="setdatetime_min" finished-at="2026-05-07T12:22:29 IST" duration-ms="3563" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=147.0.7727.138)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2139e14bb027f6e6b09baa17b05a4004, sendKeysToElement {id=f.F0A8664A850199BC829CBD3119409370.d.2768FF5A78E6E13B6911595580C67C8A.e.178, value=[Ljava.lang.CharSequence;@28459752}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61679}, goog:processID: 18828, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61679/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2139e14bb027f6e6b09baa17b05a4004)] -> css selector: #date_sel]
+Session ID: 2139e14bb027f6e6b09baa17b05a4004]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=147.0.7727.138)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2139e14bb027f6e6b09baa17b05a4004, sendKeysToElement {id=f.F0A8664A850199BC829CBD3119409370.d.2768FF5A78E6E13B6911595580C67C8A.e.178, value=[Ljava.lang.CharSequence;@28459752}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61679}, goog:processID: 18828, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61679/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2139e14bb027f6e6b09baa17b05a4004)] -> css selector: #date_sel]
+Session ID: 2139e14bb027f6e6b09baa17b05a4004
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+at Framework/ipcamera.pageobject.datetimepageobject.setdate(datetimepageobject.java:143)
+at Framework/test.datetimetest.setdatetime_min(datetimetest.java:159)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdatetime_min -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:29 IST" name="teardown" finished-at="2026-05-07T12:22:30 IST" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:30 IST" name="launchapplication" finished-at="2026-05-07T12:22:33 IST" duration-ms="2733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setdatetime_normal()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:33 IST" name="setdatetime_normal" finished-at="2026-05-07T12:22:36 IST" duration-ms="3480" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with text: (UTC+05:30) Chennai Kolkata Mumbai New Delhi
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: (UTC+05:30) Chennai Kolkata Mumbai New Delhi
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+at Framework/ipcamera.pageobject.datetimepageobject.settimezone(datetimepageobject.java:132)
+at Framework/test.datetimetest.setdatetime_normal(datetimetest.java:127)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdatetime_normal -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:36 IST" name="teardown" finished-at="2026-05-07T12:22:37 IST" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:37 IST" name="launchapplication" finished-at="2026-05-07T12:22:40 IST" duration-ms="3109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="settimezone_india()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:40 IST" name="settimezone_india" finished-at="2026-05-07T12:22:43 IST" duration-ms="3534" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with text: (UTC+05:30) Chennai Kolkata Mumbai New Delhi
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: (UTC+05:30) Chennai Kolkata Mumbai New Delhi
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: driver.version: unknown
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+at Framework/ipcamera.pageobject.datetimepageobject.settimezone(datetimepageobject.java:132)
+at Framework/test.datetimetest.settimezone_india(datetimetest.java:80)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settimezone_india -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:44 IST" name="teardown" finished-at="2026-05-07T12:22:44 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:44 IST" name="launchapplication" finished-at="2026-05-07T12:22:47 IST" duration-ms="3077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="settimezone_utc()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:47 IST" name="settimezone_utc" finished-at="2026-05-07T12:22:51 IST" duration-ms="4105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settimezone_utc -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:51 IST" name="teardown" finished-at="2026-05-07T12:22:52 IST" duration-ms="495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:52 IST" name="launchapplication" finished-at="2026-05-07T12:22:55 IST" duration-ms="3003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setviaapi_disable()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:55 IST" name="setviaapi_disable" finished-at="2026-05-07T12:22:59 IST" duration-ms="3853" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Set via API disable mismatch! expected [FALSE] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Set via API disable mismatch! expected [FALSE] but found [false]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.setviaapi_disable(datetimetest.java:324)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setviaapi_disable -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:59 IST" name="teardown" finished-at="2026-05-07T12:22:59 IST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:22:59 IST" name="launchapplication" finished-at="2026-05-07T12:23:02 IST" duration-ms="3208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setviaapi_enable()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:23:02 IST" name="setviaapi_enable" finished-at="2026-05-07T12:23:06 IST" duration-ms="3914" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Set via API enable mismatch! expected [TRUE] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Set via API enable mismatch! expected [TRUE] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.setviaapi_enable(datetimetest.java:301)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setviaapi_enable -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:23:06 IST" name="teardown" finished-at="2026-05-07T12:23:07 IST" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:23:07 IST" name="launchapplication" finished-at="2026-05-07T12:23:10 IST" duration-ms="3273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setviaonvif_disable()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:23:10 IST" name="setviaonvif_disable" finished-at="2026-05-07T12:23:14 IST" duration-ms="3883" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Set via ONVIF disable mismatch! expected [FALSE] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Set via ONVIF disable mismatch! expected [FALSE] but found [false]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.setviaonvif_disable(datetimetest.java:279)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setviaonvif_disable -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:23:14 IST" name="teardown" finished-at="2026-05-07T12:23:15 IST" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:23:15 IST" name="launchapplication" finished-at="2026-05-07T12:23:17 IST" duration-ms="2635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setviaonvif_enable()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:23:17 IST" name="setviaonvif_enable" finished-at="2026-05-07T12:23:21 IST" duration-ms="3359" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Set via ONVIF enable mismatch! expected [TRUE] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Set via ONVIF enable mismatch! expected [TRUE] but found [true]
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Framework/test.datetimetest.setviaonvif_enable(datetimetest.java:256)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setviaonvif_enable -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:23:21 IST" name="teardown" finished-at="2026-05-07T12:23:21 IST" duration-ms="482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:23:21 IST" name="launchapplication" finished-at="2026-05-07T12:23:24 IST" duration-ms="2971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="syncwithpc()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:23:24 IST" name="syncwithpc" finished-at="2026-05-07T12:23:29 IST" duration-ms="4367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- syncwithpc -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.datetimetest@626c44e7]" started-at="2026-05-07T12:23:29 IST" name="teardown" finished-at="2026-05-07T12:23:29 IST" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.datetimetest -->
+      <class name="test.home">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:17:59 IST" name="launchapplication" finished-at="2026-05-07T12:18:03 IST" duration-ms="4333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="maxvalue()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:18:03 IST" name="maxvalue" finished-at="2026-05-07T12:18:06 IST" duration-ms="3024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maxvalue -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:18:06 IST" name="teardown" finished-at="2026-05-07T12:18:07 IST" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:18:07 IST" name="launchapplication" finished-at="2026-05-07T12:18:12 IST" duration-ms="4776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="minvalue()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:18:12 IST" name="minvalue" finished-at="2026-05-07T12:18:15 IST" duration-ms="3325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- minvalue -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:18:15 IST" name="teardown" finished-at="2026-05-07T12:18:16 IST" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:18:16 IST" name="launchapplication" finished-at="2026-05-07T12:18:20 IST" duration-ms="4161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="resetvalue()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:18:20 IST" name="resetvalue" finished-at="2026-05-07T12:18:23 IST" duration-ms="3192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetvalue -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:18:23 IST" name="teardown" finished-at="2026-05-07T12:18:24 IST" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:18:24 IST" name="launchapplication" finished-at="2026-05-07T12:18:28 IST" duration-ms="3679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="setvalue()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:18:28 IST" name="setvalue" finished-at="2026-05-07T12:18:30 IST" duration-ms="2573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setvalue -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.home@241e8ea6]" started-at="2026-05-07T12:18:30 IST" name="teardown" finished-at="2026-05-07T12:18:31 IST" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.home -->
+    </test> <!-- test -->
+  </suite> <!-- Suite -->
+</testng-results>
