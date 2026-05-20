@@ -536,7 +536,7 @@ public class hometest extends basetest {
     // ─────────────────────────────────────────────
     // TC36 — Set All Normal Values
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups="sanity")
     public void setall_normal() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("setall_normal");

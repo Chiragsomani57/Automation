@@ -29,7 +29,7 @@ public class logintest extends basetest {
     // ─────────────────────────────────────────────
     // TC01 — Valid Login
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups="sanity")
     public void login_valid() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("login_valid");

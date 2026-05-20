@@ -33,7 +33,7 @@ public class streamprofiletest extends basetest {
     // ─────────────────────────────────────────────
     // TC01 - Default Button Profile 1
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups="sanity")
     public void defaultvalueprofile1() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("defaultvalueprofile1");
@@ -67,7 +67,7 @@ public class streamprofiletest extends basetest {
     // ─────────────────────────────────────────────
     // TC02 - Default Button Profile 2
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups="sanity")
     public void defaultvalueprofile2() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("defaultvalueprofile2");
@@ -102,7 +102,7 @@ public class streamprofiletest extends basetest {
     // ─────────────────────────────────────────────
     // TC03 - Default Button Profile 3
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups="sanity")
     public void defaultvalueprofile3() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("defaultvalueprofile3");
@@ -132,7 +132,7 @@ public class streamprofiletest extends basetest {
     // ─────────────────────────────────────────────
     // TC04 - Default Button Profile 4
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups="sanity")
     public void defaultvalueprofile4() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("defaultvalueprofile4");
@@ -165,7 +165,7 @@ public class streamprofiletest extends basetest {
     // ─────────────────────────────────────────────
     // TC05 - Set Values + Save Profile 1
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups="sanity")
     public void setandsaveprofile1() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("setvalueprofile1");
@@ -209,7 +209,7 @@ public class streamprofiletest extends basetest {
     // ─────────────────────────────────────────────
     // TC06 - Set Values + Save Profile 2
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups="sanity")
     public void setandsaveprofile2() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("setvalueprofile2");
@@ -250,7 +250,7 @@ public class streamprofiletest extends basetest {
     // ─────────────────────────────────────────────
     // TC07 - Set Values + Save Profile 3
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups="sanity")
     public void setandsaveprofile3() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("setvalueprofile3");
@@ -282,7 +282,7 @@ public class streamprofiletest extends basetest {
     // ─────────────────────────────────────────────
     // TC08 - Set Values + Save Profile 4
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups="sanity")
     public void setandsaveprofile4() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("setvalueprofile4");
@@ -319,7 +319,7 @@ public class streamprofiletest extends basetest {
     // ─────────────────────────────────────────────
     // TC09 - Cancel Button Profile 1
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups="sanity")
     public void cancelprofile1() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("defaultvalueprofile1");
