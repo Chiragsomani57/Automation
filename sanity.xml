@@ -12,11 +12,11 @@
 </groups>
     <classes>
     
-  <class name="test.login"></class>
-  <class name="test.home"></class>
+  <class name="test.logintest"></class>
+  <class name="test.hometest"></class>
   <class name="test.streamprofiletest"></class>
   <class name="test.datetimetest"></class>
-  <class name="test.audio"></class>
+  <class name="test.audiotest"></class>
   </classes>
 
 
