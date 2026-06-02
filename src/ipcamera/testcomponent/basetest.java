@@ -1,9 +1,10 @@
-package ipcamera.testcomponent;
+package ipcamera.testcomponent; 
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -150,16 +151,42 @@ public class basetest {
 	public HashMap<String, String> getcsvdata(String filepath,
 			String testcasename,
 			String cameratype) throws IOException {
-		Reader reader = new FileReader(filepath);
-		CSVParser csvparser = new CSVParser(reader, CSVFormat.DEFAULT.withFirstRecordAsHeader());
+
+		Reader reader = new InputStreamReader(
+				new FileInputStream(filepath), StandardCharsets.UTF_8);
+
+		CSVParser csvparser = new CSVParser(reader,
+				CSVFormat.DEFAULT.withFirstRecordAsHeader().withTrim());
 
 		for (CSVRecord record : csvparser) {
-			if (record.get("testcase").equals(testcasename) &&
-					record.get("cameratype").equals(cameratype)) {
+			String tc  = record.get("testcase").trim();
+			String cam = record.get("cameratype").trim();
 
-				// convert CSVRecord to HashMap
+			// ✅ handles all options
+			boolean cammatches = false;
+
+			if (cam.equals("all")) {
+				// Option 3 — all cameras
+				cammatches = true;
+
+			} else if (cam.contains("|")) {
+				// Option 2 — OR condition
+				for (String c : cam.split("\\|")) {
+					if (c.trim().equals(cameratype)) {
+						cammatches = true;
+						break;
+					}
+				}
+
+			} else {
+				// Option 1 & 4 — exact match
+				cammatches = cam.equals(cameratype);
+			}
+
+			if (tc.equals(testcasename) && cammatches) {
 				HashMap<String, String> data = new HashMap<>();
-				record.toMap().forEach(data::put);
+				record.toMap().forEach((k, v) ->
+				data.put(k.trim(), v.trim()));
 				csvparser.close();
 				return data;
 			}
