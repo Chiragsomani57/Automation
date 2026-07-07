@@ -19,9 +19,10 @@ public class templateschedulepageobject {
 
     // ─── Navigation ───────────────────────────────
     @FindBy(id = "configuration")               WebElement configuration;
-    @FindBy(id = "imagesetting")                WebElement imagesetting;   // ⚠️ verify id
-    @FindBy(css = "a[name='appearance-cnfg']")  WebElement appearancemenu;
-    @FindBy(linkText = "Template Schedule")     WebElement templatescheduletab;
+    @FindBy(id = "basicset")                    WebElement basicsetting;
+    @FindBy(id = "imgset")                      WebElement imagesetting;
+    @FindBy(id = "appearance")                  WebElement appearancemenu;
+    @FindBy(id = "template-cnfg")                WebElement templatescheduletab;
 
     // ─── Enable Checkbox ──────────────────────────
     @FindBy(css = "#enable")                    WebElement enable;
@@ -34,7 +35,7 @@ public class templateschedulepageobject {
     // ─── Schedule From / To ───────────────────────
     @FindBy(css = "#hh0")                       WebElement fromhour;
     @FindBy(css = "#mm0")                       WebElement frommins;
-    @FindBy(css = "#hh1")                       WebElement tohour;
+    @FindBy(id = "hh1")                         WebElement tohour;
     @FindBy(css = "#mm1")                       WebElement tomins;
 
     // ─── Entire Week ──────────────────────────────
@@ -73,7 +74,16 @@ public class templateschedulepageobject {
     // NAVIGATION
     // ═══════════════════════════════════════════════
     public void clickconfiguration()       { configuration.click();       }
-    public void clickimagesetting()        { imagesetting.click();        }
+    public void clickbasicsetting()        {basicsetting.click();}
+    public void clickimagesetting()   {
+        if (!imagesetting.isDisplayed())
+        {
+            clickbasicsetting();}
+        else
+        {
+            imagesetting.click();
+        }
+    }
     public void clickappearancemenu()      { appearancemenu.click();      }
     public void clicktemplatescheduletab() { templatescheduletab.click(); }
 

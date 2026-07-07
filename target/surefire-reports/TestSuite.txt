@@ -1,14 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 46, Failures: 30, Errors: 0, Skipped: 0, Time elapsed: 378.7 s <<< FAILURE! -- in TestSuite
-test.streamprofiletest.defaultvalueprofile1 -- Time elapsed: 7.299 s <<< FAILURE!
+Tests run: 28, Failures: 14, Errors: 0, Skipped: 0, Time elapsed: 204.5 s <<< FAILURE! -- in TestSuite
+test.streamprofiletest.defaultvalueprofile1 -- Time elapsed: 5.296 s <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
+	Resolution mismatch! expected [1920x1080] but found [2592x1944],
+	Bitrate mismatch! expected [4096 kbps] but found [8192 kbps],
 	Audio mismatch! expected [false] but found [true]
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.streamprofiletest.defaultvalueprofile1(streamprofiletest.java:64)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile1(streamprofiletest.java:64)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -19,7 +21,7 @@ The following asserts failed:
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -40,14 +42,13 @@ The following asserts failed:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.streamprofiletest.defaultvalueprofile2 -- Time elapsed: 5.566 s <<< FAILURE!
+test.streamprofiletest.defaultvalueprofile2 -- Time elapsed: 5.271 s <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
-	Resolution mismatch! expected [640x480] but found [D1],
-	Audio mismatch! expected [TRUE] but found [true]
+	Resolution mismatch! expected [640x480] but found [D1]
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.streamprofiletest.defaultvalueprofile2(streamprofiletest.java:99)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile2(streamprofiletest.java:99)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -58,7 +59,7 @@ The following asserts failed:
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -79,15 +80,13 @@ The following asserts failed:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.streamprofiletest.defaultvalueprofile3 -- Time elapsed: 4.834 s <<< FAILURE!
+test.streamprofiletest.defaultvalueprofile3 -- Time elapsed: 4.711 s <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
-	Bitrate mismatch! expected [4096 kbps] but found [2048 kbps],
-	FPS mismatch! expected [25] but found [2],
-	Audio mismatch! expected [TRUE] but found [true]
+	FPS mismatch! expected [25] but found [2]
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.streamprofiletest.defaultvalueprofile3(streamprofiletest.java:129)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile3(streamprofiletest.java:129)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -98,7 +97,7 @@ The following asserts failed:
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -119,18 +118,16 @@ The following asserts failed:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.streamprofiletest.defaultvalueprofile4 -- Time elapsed: 5.291 s <<< FAILURE!
+test.streamprofiletest.defaultvalueprofile4 -- Time elapsed: 4.708 s <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
 	Codec mismatch! expected [H.264] but found [MJPEG],
 	Resolution mismatch! expected [1920x1080] but found [D1],
 	Bitrate mismatch! expected [4096 kbps] but found [1024 kbps],
-	FPS mismatch! expected [25] but found [5],
-	Audio mismatch! expected [TRUE] but found [true],
-	ROI mismatch! expected [FALSE] but found [false]
+	FPS mismatch! expected [25] but found [5]
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.streamprofiletest.defaultvalueprofile4(streamprofiletest.java:162)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile4(streamprofiletest.java:162)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -141,7 +138,7 @@ The following asserts failed:
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -162,17 +159,17 @@ The following asserts failed:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.streamprofiletest.setandsaveprofile1 -- Time elapsed: 4.822 s <<< FAILURE!
+test.streamprofiletest.setandsaveprofile1 -- Time elapsed: 3.564 s <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 Cannot locate option with text: 1280x720
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
 Driver info: driver.version: unknown
 	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
 	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-	at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
-	at Framework/test.streamprofiletest.setandsaveprofile1(streamprofiletest.java:177)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile1(streamprofiletest.java:177)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -183,7 +180,7 @@ Driver info: driver.version: unknown
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -204,17 +201,17 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.streamprofiletest.setandsaveprofile2 -- Time elapsed: 4.091 s <<< FAILURE!
+test.streamprofiletest.setandsaveprofile2 -- Time elapsed: 3.599 s <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 Cannot locate option with text: 640x360
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
 Driver info: driver.version: unknown
 	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
 	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-	at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
-	at Framework/test.streamprofiletest.setandsaveprofile2(streamprofiletest.java:220)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile2(streamprofiletest.java:220)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -225,7 +222,7 @@ Driver info: driver.version: unknown
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -246,17 +243,17 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.streamprofiletest.setandsaveprofile3 -- Time elapsed: 4.541 s <<< FAILURE!
+test.streamprofiletest.setandsaveprofile3 -- Time elapsed: 3.458 s <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 Cannot locate option with text: 1280x720
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
 Driver info: driver.version: unknown
 	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
 	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-	at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
-	at Framework/test.streamprofiletest.setandsaveprofile3(streamprofiletest.java:260)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile3(streamprofiletest.java:260)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -267,7 +264,7 @@ Driver info: driver.version: unknown
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -288,17 +285,17 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.streamprofiletest.setandsaveprofile4 -- Time elapsed: 4.708 s <<< FAILURE!
+test.streamprofiletest.setandsaveprofile4 -- Time elapsed: 3.744 s <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 Cannot locate option with text: 1280x720
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
 Driver info: driver.version: unknown
 	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
 	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-	at Framework/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
-	at Framework/test.streamprofiletest.setandsaveprofile4(streamprofiletest.java:293)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile4(streamprofiletest.java:293)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -309,7 +306,7 @@ Driver info: driver.version: unknown
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -330,402 +327,17 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.datetimetest.bothcheckbox_disable -- Time elapsed: 4.125 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	ONVIF mismatch! expected [FALSE] but found [false],
-	API mismatch! expected [FALSE] but found [false]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.bothcheckbox_disable(datetimetest.java:379)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.bothcheckbox_enable -- Time elapsed: 4.083 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	ONVIF mismatch! expected [TRUE] but found [true],
-	API mismatch! expected [TRUE] but found [true]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.bothcheckbox_enable(datetimetest.java:352)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.defaultdatetime -- Time elapsed: 4.191 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	Set via ONVIF mismatch! expected [TRUE] but found [true],
-	Set via API mismatch! expected [TRUE] but found [true],
-	NTP Sync mismatch! expected [] but found [false],
-	DST mismatch! expected [FALSE] but found [false]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.defaultdatetime(datetimetest.java:68)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.defaultdst -- Time elapsed: 4.187 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	DST default mismatch! expected [FALSE] but found [false]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.defaultdst(datetimetest.java:562)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.defaultntp -- Time elapsed: 4.055 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	NTP default mismatch! expected [FALSE] but found [false]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.defaultntp(datetimetest.java:404)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.dst_australia -- Time elapsed: 7.563 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	DST mismatch! expected [TRUE] but found [true]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.dst_australia(datetimetest.java:687)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.dst_disable -- Time elapsed: 4.092 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	DST disable mismatch! expected [FALSE] but found [false]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.dst_disable(datetimetest.java:783)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.dst_europe -- Time elapsed: 6.170 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	DST mismatch! expected [TRUE] but found [true]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.dst_europe(datetimetest.java:650)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.dst_standard -- Time elapsed: 7.377 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	DST mismatch! expected [TRUE] but found [true]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.dst_standard(datetimetest.java:611)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.ntp_12hour -- Time elapsed: 5.063 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	NTP sync mismatch! expected [TRUE] but found [true]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.ntp_12hour(datetimetest.java:486)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.ntp_1hour -- Time elapsed: 4.089 s <<< FAILURE!
+test.datetimetest.settimezone_india -- Time elapsed: 3.203 s <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-Cannot locate option with text: 1 Hour
+Cannot locate option with text: (UTC+05:30) Chennai Kolkata Mumbai New Delhi
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
 Driver info: driver.version: unknown
 	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
 	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-	at Framework/ipcamera.pageobject.datetimepageobject.setupdatetime(datetimepageobject.java:213)
-	at Framework/test.datetimetest.ntp_1hour(datetimetest.java:417)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.datetimepageobject.settimezone(datetimepageobject.java:132)
+	at Framework@0.0.1-SNAPSHOT/test.datetimetest.settimezone_india(datetimetest.java:80)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -736,7 +348,7 @@ Driver info: driver.version: unknown
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -757,13 +369,57 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.datetimetest.ntp_24hour -- Time elapsed: 5.009 s <<< FAILURE!
+test.networktest.tc16_nas_nfs -- Time elapsed: 10.97 s <<< FAILURE!
+java.lang.AssertionError: expected [] but found [Connection failed]
+	at org.testng@7.11.0/org.testng.Assert.fail(Assert.java:111)
+	at org.testng@7.11.0/org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng@7.11.0/org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng@7.11.0/org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng@7.11.0/org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng@7.11.0/org.testng.Assert.assertEquals(Assert.java:666)
+	at Framework@0.0.1-SNAPSHOT/test.networktest.tc16_nas_nfs(networktest.java:481)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+test.advancednetworktest.tc02_upnp_default -- Time elapsed: 3.760 s <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
-	NTP sync mismatch! expected [TRUE] but found [true]
+	UPnP Friendly Name default mismatch! expected [GANZ-CAMERA] but found [Matrix IP Camera],
+	External HTTPS Port default mismatch! expected [443] but found [0],
+	External RTSP Port default mismatch! expected [554] but found [0],
+	Bonjour default mismatch! expected [true] but found [false],
+	Bonjour Friendly Name default mismatch! expected [GANZ-CAMERA] but found [Matrix IP Camera]
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.ntp_24hour(datetimetest.java:513)
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc02_upnp_default(advancednetworktest.java:79)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -774,7 +430,7 @@ The following asserts failed:
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -795,13 +451,13 @@ The following asserts failed:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.datetimetest.ntp_6hour -- Time elapsed: 3.771 s <<< FAILURE!
+test.advancednetworktest.tc05_ddns_default -- Time elapsed: 3.775 s <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
-	NTP sync mismatch! expected [TRUE] but found [true]
+	DDNS Update Interval default mismatch! expected [60] but found [5]
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.ntp_6hour(datetimetest.java:459)
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc05_ddns_default(advancednetworktest.java:110)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -812,7 +468,7 @@ The following asserts failed:
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -833,13 +489,13 @@ The following asserts failed:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.datetimetest.ntp_disable -- Time elapsed: 3.860 s <<< FAILURE!
+test.advancednetworktest.tc08_mxdns_default -- Time elapsed: 3.433 s <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
-	NTP disable mismatch! expected [FALSE] but found [false]
+	Matrix DNS Forwarded Port default mismatch! expected [] but found [80]
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.ntp_disable(datetimetest.java:536)
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc08_mxdns_default(advancednetworktest.java:137)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -850,7 +506,7 @@ The following asserts failed:
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -871,17 +527,17 @@ The following asserts failed:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-test.datetimetest.setdatetime_max -- Time elapsed: 3.128 s <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=147.0.7727.138)
+test.advancednetworktest.tc10_dot1x_default -- Time elapsed: 3.424 s <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#enable"}
+  (Session info: chrome=149.0.7827.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c2aaf38c1a2c4e1befa1a16592164d07, sendKeysToElement {id=f.072764087338BDB684F75E61F689CA1C.d.F6BA6CD5C892634F6C59426251910890.e.177, value=[Ljava.lang.CharSequence;@15733aa5}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61561}, goog:processID: 9384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61561/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (c2aaf38c1a2c4e1befa1a16592164d07)] -> css selector: #date_sel]
-Session ID: c2aaf38c1a2c4e1befa1a16592164d07
+Command: [4fec0f1ce418f94725aa32f1d1c5c994, findElement {using=css selector, value=#enable}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.199, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\CHIRAG~1.SOM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60463}, goog:processID: 4460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60463/devtoo..., se:cdpVersion: 149.0.7827.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4fec0f1ce418f94725aa32f1d1c5c994
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -892,74 +548,15 @@ Session ID: c2aaf38c1a2c4e1befa1a16592164d07
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-	at Framework/ipcamera.pageobject.datetimepageobject.setdate(datetimepageobject.java:143)
-	at Framework/test.datetimetest.setdatetime_max(datetimetest.java:192)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.setdatetime_min -- Time elapsed: 3.721 s <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=147.0.7727.138)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2139e14bb027f6e6b09baa17b05a4004, sendKeysToElement {id=f.F0A8664A850199BC829CBD3119409370.d.2768FF5A78E6E13B6911595580C67C8A.e.178, value=[Ljava.lang.CharSequence;@28459752}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61679}, goog:processID: 18828, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61679/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2139e14bb027f6e6b09baa17b05a4004)] -> css selector: #date_sel]
-Session ID: 2139e14bb027f6e6b09baa17b05a4004
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-	at Framework/ipcamera.pageobject.datetimepageobject.setdate(datetimepageobject.java:143)
-	at Framework/test.datetimetest.setdatetime_min(datetimetest.java:159)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isSelected(Unknown Source)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.advancednetworkpageobject.isdot1xenabled(advancednetworkpageobject.java:160)
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc10_dot1x_default(advancednetworktest.java:151)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -970,243 +567,7 @@ Session ID: 2139e14bb027f6e6b09baa17b05a4004
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.setdatetime_normal -- Time elapsed: 3.643 s <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Cannot locate option with text: (UTC+05:30) Chennai Kolkata Mumbai New Delhi
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: driver.version: unknown
-	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
-	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-	at Framework/ipcamera.pageobject.datetimepageobject.settimezone(datetimepageobject.java:132)
-	at Framework/test.datetimetest.setdatetime_normal(datetimetest.java:127)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.settimezone_india -- Time elapsed: 3.706 s <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Cannot locate option with text: (UTC+05:30) Chennai Kolkata Mumbai New Delhi
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: driver.version: unknown
-	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
-	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-	at Framework/ipcamera.pageobject.datetimepageobject.settimezone(datetimepageobject.java:132)
-	at Framework/test.datetimetest.settimezone_india(datetimetest.java:80)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.setviaapi_disable -- Time elapsed: 4.000 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	Set via API disable mismatch! expected [FALSE] but found [false]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.setviaapi_disable(datetimetest.java:324)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.setviaapi_enable -- Time elapsed: 4.080 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	Set via API enable mismatch! expected [TRUE] but found [true]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.setviaapi_enable(datetimetest.java:301)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.setviaonvif_disable -- Time elapsed: 4.050 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	Set via ONVIF disable mismatch! expected [FALSE] but found [false]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.setviaonvif_disable(datetimetest.java:279)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-test.datetimetest.setviaonvif_enable -- Time elapsed: 3.534 s <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	Set via ONVIF enable mismatch! expected [TRUE] but found [true]
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at Framework/test.datetimetest.setviaonvif_enable(datetimetest.java:256)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)

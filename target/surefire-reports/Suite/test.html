@@ -55,20 +55,20 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/7</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/14/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 18 14:48:50 IST 2026</td>
+<td>Started on:</td><td>Fri Jul 03 16:40:41 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>209 seconds (209794 ms)</td>
+<tr><td>Total time:</td><td>203 seconds (203607 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>sanity </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,61 +76,38 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.login.launchapplication()'><b>launchapplication</b><br>Test class: test.login</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
+<td title='test.datetimetest.settimezone_india()'><b>settimezone_india</b><br>Test class: test.datetimetest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: (UTC+05:30) Chennai Kolkata Mumbai New Delhi
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1919592808", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1919592808'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.datetimepageobject.settimezone(datetimepageobject.java:132)
+	at Framework@0.0.1-SNAPSHOT/test.datetimetest.settimezone_india(datetimetest.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1363127070", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1363127070'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: (UTC+05:30) Chennai Kolkata Mumbai New Delhi
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.datetimepageobject.settimezone(datetimepageobject.java:132)
+	at Framework@0.0.1-SNAPSHOT/test.datetimetest.settimezone_india(datetimetest.java:80)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -151,64 +128,41 @@ Session ID: 834b821762dd8e71a81e9f2558d305eb
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>24</td>
-<td>test.login@62e20a76</td></tr>
+<td>3</td>
+<td>test.datetimetest@3b0c9195</td></tr>
 <tr>
-<td title='test.login.launchapplication()'><b>launchapplication</b><br>Test class: test.login</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
+<td title='test.streamprofiletest.setandsaveprofile3()'><b>setandsaveprofile3</b><br>Test class: test.streamprofiletest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [47c54e967a0b44840c206d7a787b926b, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58367}, goog:processID: 13460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58367/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 47c54e967a0b44840c206d7a787b926b
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1545077099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1545077099'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile3(streamprofiletest.java:260)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1128414528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1128414528'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [47c54e967a0b44840c206d7a787b926b, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58367}, goog:processID: 13460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58367/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 47c54e967a0b44840c206d7a787b926b
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile3(streamprofiletest.java:260)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -229,64 +183,39 @@ Session ID: 47c54e967a0b44840c206d7a787b926b
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>50</td>
-<td>test.login@62e20a76</td></tr>
+<td>3</td>
+<td>test.streamprofiletest@61c9c3fd</td></tr>
 <tr>
-<td title='test.login.launchapplication()'><b>launchapplication</b><br>Test class: test.login</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1a3c30050fa5b32b914769f77b79655c, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58548}, goog:processID: 7920, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58548/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a3c30050fa5b32b914769f77b79655c
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1058994646", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1058994646'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1a3c30050fa5b32b914769f77b79655c, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58548}, goog:processID: 7920, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58548/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a3c30050fa5b32b914769f77b79655c
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
+<td title='test.advancednetworktest.tc02_upnp_default()'><b>tc02_upnp_default</b><br>Test class: test.advancednetworktest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	UPnP Friendly Name default mismatch! expected [GANZ-CAMERA] but found [Matrix IP Camera],
+	External HTTPS Port default mismatch! expected [443] but found [0],
+	External RTSP Port default mismatch! expected [554] but found [0],
+	Bonjour default mismatch! expected [true] but found [false],
+	Bonjour Friendly Name default mismatch! expected [GANZ-CAMERA] but found [Matrix IP Camera]
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc02_upnp_default(advancednetworktest.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1997102220", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1997102220'><pre>java.lang.AssertionError: The following asserts failed:
+	UPnP Friendly Name default mismatch! expected [GANZ-CAMERA] but found [Matrix IP Camera],
+	External HTTPS Port default mismatch! expected [443] but found [0],
+	External RTSP Port default mismatch! expected [554] but found [0],
+	Bonjour default mismatch! expected [true] but found [false],
+	Bonjour Friendly Name default mismatch! expected [GANZ-CAMERA] but found [Matrix IP Camera]
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc02_upnp_default(advancednetworktest.java:79)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -307,18 +236,19 @@ Session ID: 1a3c30050fa5b32b914769f77b79655c
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>52</td>
-<td>test.login@62e20a76</td></tr>
+<td>3</td>
+<td>test.advancednetworktest@5cdd09b1</td></tr>
 <tr>
-<td title='test.login.launchapplication()'><b>launchapplication</b><br>Test class: test.login</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
+<td title='test.advancednetworktest.tc10_dot1x_default()'><b>tc10_dot1x_default</b><br>Test class: test.advancednetworktest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#enable&quot;}
+  (Session info: chrome=149.0.7827.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e9b036f891c4a90db947bf7a722993b5, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58624}, goog:processID: 16976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58624/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e9b036f891c4a90db947bf7a722993b5
+Command: [4fec0f1ce418f94725aa32f1d1c5c994, findElement {using=css selector, value=#enable}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.199, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\CHIRAG~1.SOM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60463}, goog:processID: 4460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60463/devtoo..., se:cdpVersion: 149.0.7827.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4fec0f1ce418f94725aa32f1d1c5c994
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -326,18 +256,26 @@ Session ID: e9b036f891c4a90db947bf7a722993b5
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace927557408", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace927557408'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isSelected(Unknown Source)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.advancednetworkpageobject.isdot1xenabled(advancednetworkpageobject.java:160)
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc10_dot1x_default(advancednetworktest.java:151)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1016989399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1016989399'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#enable&quot;}
+  (Session info: chrome=149.0.7827.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e9b036f891c4a90db947bf7a722993b5, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58624}, goog:processID: 16976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58624/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e9b036f891c4a90db947bf7a722993b5
+Command: [4fec0f1ce418f94725aa32f1d1c5c994, findElement {using=css selector, value=#enable}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.199, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\CHIRAG~1.SOM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60463}, goog:processID: 4460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60463/devtoo..., se:cdpVersion: 149.0.7827.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4fec0f1ce418f94725aa32f1d1c5c994
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -348,23 +286,26 @@ Session ID: e9b036f891c4a90db947bf7a722993b5
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isSelected(Unknown Source)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.advancednetworkpageobject.isdot1xenabled(advancednetworkpageobject.java:160)
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc10_dot1x_default(advancednetworktest.java:151)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -385,64 +326,33 @@ Session ID: e9b036f891c4a90db947bf7a722993b5
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>25</td>
-<td>test.login@62e20a76</td></tr>
+<td>3</td>
+<td>test.advancednetworktest@5cdd09b1</td></tr>
 <tr>
-<td title='test.login.launchapplication()'><b>launchapplication</b><br>Test class: test.login</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc87df8c8e468d4aaadd42fca8dd1d10, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58497}, goog:processID: 33408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58497/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc87df8c8e468d4aaadd42fca8dd1d10
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2064787513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2064787513'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc87df8c8e468d4aaadd42fca8dd1d10, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58497}, goog:processID: 33408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58497/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc87df8c8e468d4aaadd42fca8dd1d10
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
+<td title='test.networktest.tc16_nas_nfs()'><b>tc16_nas_nfs</b><br>Test class: test.networktest</td>
+<td><div><pre>java.lang.AssertionError: expected [] but found [Connection failed]
+	at Framework@0.0.1-SNAPSHOT/test.networktest.tc16_nas_nfs(networktest.java:481)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2016335685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2016335685'><pre>java.lang.AssertionError: expected [] but found [Connection failed]
+	at org.testng@7.11.0/org.testng.Assert.fail(Assert.java:111)
+	at org.testng@7.11.0/org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng@7.11.0/org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng@7.11.0/org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng@7.11.0/org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng@7.11.0/org.testng.Assert.assertEquals(Assert.java:666)
+	at Framework@0.0.1-SNAPSHOT/test.networktest.tc16_nas_nfs(networktest.java:481)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -463,66 +373,41 @@ Session ID: fc87df8c8e468d4aaadd42fca8dd1d10
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>24</td>
-<td>test.login@62e20a76</td></tr>
+<td>10</td>
+<td>test.networktest@2c7b5824</td></tr>
 <tr>
-<td title='test.login.launchapplication()'><b>launchapplication</b><br>Test class: test.login</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: target frame detached: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=148.0.7778.167)
+<td title='test.streamprofiletest.setandsaveprofile1()'><b>setandsaveprofile1</b><br>Test class: test.streamprofiletest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8ddf11bb94819a42af8b815c68acbb4a, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58684}, goog:processID: 16768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58684/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8ddf11bb94819a42af8b815c68acbb4a
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2078992278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2078992278'><pre>org.openqa.selenium.WebDriverException: target frame detached: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=148.0.7778.167)
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile1(streamprofiletest.java:177)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace243801670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace243801670'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8ddf11bb94819a42af8b815c68acbb4a, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58684}, goog:processID: 16768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58684/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8ddf11bb94819a42af8b815c68acbb4a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile1(streamprofiletest.java:177)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -543,11 +428,401 @@ Session ID: 8ddf11bb94819a42af8b815c68acbb4a
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>16</td>
-<td>test.login@62e20a76</td></tr>
+<td>3</td>
+<td>test.streamprofiletest@61c9c3fd</td></tr>
+<tr>
+<td title='test.streamprofiletest.setandsaveprofile4()'><b>setandsaveprofile4</b><br>Test class: test.streamprofiletest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile4(streamprofiletest.java:293)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1792086750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1792086750'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 1280x720
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile4(streamprofiletest.java:293)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>3</td>
+<td>test.streamprofiletest@61c9c3fd</td></tr>
+<tr>
+<td title='test.streamprofiletest.defaultvalueprofile4()'><b>defaultvalueprofile4</b><br>Test class: test.streamprofiletest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Codec mismatch! expected [H.264] but found [MJPEG],
+	Resolution mismatch! expected [1920x1080] but found [D1],
+	Bitrate mismatch! expected [4096 kbps] but found [1024 kbps],
+	FPS mismatch! expected [25] but found [5]
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile4(streamprofiletest.java:162)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1638335699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1638335699'><pre>java.lang.AssertionError: The following asserts failed:
+	Codec mismatch! expected [H.264] but found [MJPEG],
+	Resolution mismatch! expected [1920x1080] but found [D1],
+	Bitrate mismatch! expected [4096 kbps] but found [1024 kbps],
+	FPS mismatch! expected [25] but found [5]
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile4(streamprofiletest.java:162)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>4</td>
+<td>test.streamprofiletest@61c9c3fd</td></tr>
+<tr>
+<td title='test.streamprofiletest.defaultvalueprofile1()'><b>defaultvalueprofile1</b><br>Test class: test.streamprofiletest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Resolution mismatch! expected [1920x1080] but found [2592x1944],
+	Bitrate mismatch! expected [4096 kbps] but found [8192 kbps],
+	Audio mismatch! expected [false] but found [true]
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile1(streamprofiletest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1561668557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1561668557'><pre>java.lang.AssertionError: The following asserts failed:
+	Resolution mismatch! expected [1920x1080] but found [2592x1944],
+	Bitrate mismatch! expected [4096 kbps] but found [8192 kbps],
+	Audio mismatch! expected [false] but found [true]
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile1(streamprofiletest.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>5</td>
+<td>test.streamprofiletest@61c9c3fd</td></tr>
+<tr>
+<td title='test.streamprofiletest.defaultvalueprofile2()'><b>defaultvalueprofile2</b><br>Test class: test.streamprofiletest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Resolution mismatch! expected [640x480] but found [D1]
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile2(streamprofiletest.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1734902032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1734902032'><pre>java.lang.AssertionError: The following asserts failed:
+	Resolution mismatch! expected [640x480] but found [D1]
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile2(streamprofiletest.java:99)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>5</td>
+<td>test.streamprofiletest@61c9c3fd</td></tr>
+<tr>
+<td title='test.streamprofiletest.defaultvalueprofile3()'><b>defaultvalueprofile3</b><br>Test class: test.streamprofiletest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	FPS mismatch! expected [25] but found [2]
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile3(streamprofiletest.java:129)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace114159191", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace114159191'><pre>java.lang.AssertionError: The following asserts failed:
+	FPS mismatch! expected [25] but found [2]
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.defaultvalueprofile3(streamprofiletest.java:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>4</td>
+<td>test.streamprofiletest@61c9c3fd</td></tr>
+<tr>
+<td title='test.advancednetworktest.tc08_mxdns_default()'><b>tc08_mxdns_default</b><br>Test class: test.advancednetworktest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Matrix DNS Forwarded Port default mismatch! expected [] but found [80]
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc08_mxdns_default(advancednetworktest.java:137)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace735202313", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace735202313'><pre>java.lang.AssertionError: The following asserts failed:
+	Matrix DNS Forwarded Port default mismatch! expected [] but found [80]
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc08_mxdns_default(advancednetworktest.java:137)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>3</td>
+<td>test.advancednetworktest@5cdd09b1</td></tr>
+<tr>
+<td title='test.advancednetworktest.tc05_ddns_default()'><b>tc05_ddns_default</b><br>Test class: test.advancednetworktest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	DDNS Update Interval default mismatch! expected [60] but found [5]
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc05_ddns_default(advancednetworktest.java:110)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace217588390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace217588390'><pre>java.lang.AssertionError: The following asserts failed:
+	DDNS Update Interval default mismatch! expected [60] but found [5]
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng@7.11.0/org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at Framework@0.0.1-SNAPSHOT/test.advancednetworktest.tc05_ddns_default(advancednetworktest.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>3</td>
+<td>test.advancednetworktest@5cdd09b1</td></tr>
+<tr>
+<td title='test.streamprofiletest.setandsaveprofile2()'><b>setandsaveprofile2</b><br>Test class: test.streamprofiletest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 640x360
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile2(streamprofiletest.java:220)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace294632176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace294632176'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 640x360
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;
+Driver info: driver.version: unknown
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
+	at org.seleniumhq.selenium.support/org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at Framework@0.0.1-SNAPSHOT/ipcamera.pageobject.streamprofileobject.setresolution(streamprofileobject.java:170)
+	at Framework@0.0.1-SNAPSHOT/test.streamprofiletest.setandsaveprofile2(streamprofiletest.java:220)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>3</td>
+<td>test.streamprofiletest@61c9c3fd</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -555,551 +830,75 @@ Session ID: 8ddf11bb94819a42af8b815c68acbb4a
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.login.attempts()'><b>attempts</b><br>Test class: test.login<br>Parameters: {password=Admin@12, username=admin}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1786872722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1786872722'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>test.login@62e20a76</td></tr>
+<td title='test.eventservertest.tc11_snmp_default()'><b>tc11_snmp_default</b><br>Test class: test.eventservertest</td>
+<td></td>
+<td>3</td>
+<td>test.eventservertest@302a07d</td></tr>
 <tr>
-<td title='test.login.validlogin()'><b>validlogin</b><br>Test class: test.login</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2085813377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2085813377'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>test.login@62e20a76</td></tr>
+<td title='test.logintest.login_valid()'><b>login_valid</b><br>Test class: test.logintest</td>
+<td></td>
+<td>2</td>
+<td>test.logintest@ebb6851</td></tr>
 <tr>
-<td title='test.login.attempts()'><b>attempts</b><br>Test class: test.login<br>Parameters: {password=Admin@12, username=admin}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [47c54e967a0b44840c206d7a787b926b, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58367}, goog:processID: 13460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58367/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 47c54e967a0b44840c206d7a787b926b
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1380583278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1380583278'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [47c54e967a0b44840c206d7a787b926b, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58367}, goog:processID: 13460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58367/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 47c54e967a0b44840c206d7a787b926b
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>test.login@62e20a76</td></tr>
+<td title='test.eventservertest.tc04_email_default()'><b>tc04_email_default</b><br>Test class: test.eventservertest</td>
+<td></td>
+<td>3</td>
+<td>test.eventservertest@302a07d</td></tr>
 <tr>
-<td title='test.login.withoutusername()'><b>withoutusername</b><br>Test class: test.login</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1483050851", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1483050851'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>test.login@62e20a76</td></tr>
+<td title='test.networktest.tc20_port_default()'><b>tc20_port_default</b><br>Test class: test.networktest</td>
+<td></td>
+<td>3</td>
+<td>test.networktest@2c7b5824</td></tr>
 <tr>
-<td title='test.login.attempts()'><b>attempts</b><br>Test class: test.login<br>Parameters: {password=Admin@12, username=admin}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace965778714", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace965778714'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>test.login@62e20a76</td></tr>
+<td title='test.streamprofiletest.cancelprofile1()'><b>cancelprofile1</b><br>Test class: test.streamprofiletest</td>
+<td></td>
+<td>4</td>
+<td>test.streamprofiletest@61c9c3fd</td></tr>
 <tr>
-<td title='test.login.attempts()'><b>attempts</b><br>Test class: test.login<br>Parameters: {password=Admin@12, username=admin}</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace994632067", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace994632067'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>test.login@62e20a76</td></tr>
+<td title='test.hometest.setall_normal()'><b>setall_normal</b><br>Test class: test.hometest</td>
+<td></td>
+<td>3</td>
+<td>test.hometest@2d36e77e</td></tr>
 <tr>
-<td title='test.login.withoutpassword()'><b>withoutpassword</b><br>Test class: test.login</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace786970485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace786970485'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=148.0.7778.167)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [834b821762dd8e71a81e9f2558d305eb, get {url=http://192.168.101.72/html/index.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\CHIRAG~1.AD\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58442}, goog:processID: 19320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58442/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 834b821762dd8e71a81e9f2558d305eb
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.seleniumhq.selenium.remote_driver/org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at Framework/ipcamera.testcomponent.basetest.launchapplication(basetest.java:92)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng@7.11.0/org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng@7.11.0/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng@7.11.0/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng@7.11.0/org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng@7.11.0/org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng@7.11.0/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng@7.11.0/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng@7.11.0/org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng@7.11.0/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng@7.11.0/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng@7.11.0/org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng@7.11.0/org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>test.login@62e20a76</td></tr>
+<td title='test.networktest.tc02_ipchange_static()'><b>tc02_ipchange_static</b><br>Test class: test.networktest</td>
+<td></td>
+<td>13</td>
+<td>test.networktest@2c7b5824</td></tr>
+<tr>
+<td title='test.networktest.tc15_nas_cifs()'><b>tc15_nas_cifs</b><br>Test class: test.networktest</td>
+<td></td>
+<td>7</td>
+<td>test.networktest@2c7b5824</td></tr>
+<tr>
+<td title='test.networktest.tc21_port_changeall()'><b>tc21_port_changeall</b><br>Test class: test.networktest</td>
+<td></td>
+<td>13</td>
+<td>test.networktest@2c7b5824</td></tr>
+<tr>
+<td title='test.eventservertest.tc01_ftp_testconnection()'><b>tc01_ftp_testconnection</b><br>Test class: test.eventservertest</td>
+<td></td>
+<td>19</td>
+<td>test.eventservertest@302a07d</td></tr>
+<tr>
+<td title='test.eventservertest.tc02_ftp_default()'><b>tc02_ftp_default</b><br>Test class: test.eventservertest</td>
+<td></td>
+<td>3</td>
+<td>test.eventservertest@302a07d</td></tr>
+<tr>
+<td title='test.audiotest.defaultaudio()'><b>defaultaudio</b><br>Test class: test.audiotest</td>
+<td></td>
+<td>3</td>
+<td>test.audiotest@366c4480</td></tr>
+<tr>
+<td title='test.eventservertest.tc03_email_testconnection()'><b>tc03_email_testconnection</b><br>Test class: test.eventservertest</td>
+<td></td>
+<td>15</td>
+<td>test.eventservertest@302a07d</td></tr>
+<tr>
+<td title='test.eventservertest.tc06_tcp_default()'><b>tc06_tcp_default</b><br>Test class: test.eventservertest</td>
+<td></td>
+<td>3</td>
+<td>test.eventservertest@302a07d</td></tr>
 </table><p>
 </body>
 </html>

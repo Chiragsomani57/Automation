@@ -1,11 +1,11 @@
 testcase,cameratype,username,password,expectedresult,errormessage
-login_valid,2mp,admin,Admin@123,pass,
-login_wrongpassword,2mp,admin,wrong123,fail,Number of login attempts left : 4
-login_wrongusername,2mp,wrong,Admin@123,fail,Login Failed
-login_wrongboth,2mp,wrong,wrong123,fail,Login Failed
-login_emptyusername,2mp,,Admin@123,fail,Please enter user name
-login_emptypassword,2mp,admin,,fail,Please enter Password
-login_bothempty,2mp,,,fail,Please enter user name
+login_valid,2mp|5mp|8mp,admin,Admin@123,pass,
+login_wrongpassword,2mp|5mp|8mp,admin,wrong123,fail,Number of login attempts left : 4
+login_wrongusername,2mp|5mp|8mp,wrong,Admin@123,fail,Login Failed
+login_wrongboth,2mp|5mp|8mp,wrong,wrong123,fail,Login Failed
+login_emptyusername,2mp|5mp|8mp,,Admin@123,fail,Please enter user name
+login_emptypassword,2mp|5mp|8mp,admin,,fail,Please enter Password
+login_bothempty,2mp|5mp|8mp,,,fail,Please enter user name
 ,,,,,
 ,,,,,
 ,,,,,

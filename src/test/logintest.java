@@ -38,9 +38,7 @@ public class logintest extends basetest {
         loginpage.login(data.get("username"), data.get("password"));
 
         // after valid login — URL should change to main.html
-        soft.assertTrue(
-            driver.getCurrentUrl().contains("main.html"),
-            "Valid login failed — URL did not change to main.html!");
+       soft.assertEquals(driver.getCurrentUrl(),loginpage.getmainurl());
 
         System.out.println("=== TC01 Valid Login ===");
         System.out.println("Username : " + data.get("username"));

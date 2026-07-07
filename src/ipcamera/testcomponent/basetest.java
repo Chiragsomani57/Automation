@@ -37,6 +37,7 @@ public class basetest {
 	
 	public WebDriver driver;
 	public loginpageobject loginpage;
+	public String ipaddress;
 	
 
 	public WebDriver intializedriver() throws IOException
@@ -71,19 +72,7 @@ public class basetest {
 		return driver;
 
 	}
-	//read data from the json file
-	public List<HashMap<String, String>> getjsondata(String filepath) throws IOException {
-		
-		String jsoncontent=FileUtils.readFileToString(new File(filepath),StandardCharsets.UTF_8);
-				
-		//String to hasmap by jackson databid
-				
-		ObjectMapper mapper=new ObjectMapper();
-		List<HashMap<String, String>> data=mapper.readValue(jsoncontent, new TypeReference<List<HashMap<String,String>>>(){});
-		return data;
-	}
-	
-	
+
 	
 	@BeforeMethod(alwaysRun=true)
 	public loginpageobject launchapplication() throws IOException
@@ -205,5 +194,56 @@ public class basetest {
 				System.getProperty("cameratype") :
 					pro.getProperty("cameratype");
 	}
+
+
+	// ═══════════════════════════════════════════════════════════════════
+// ADD THESE METHODS TO YOUR EXISTING basetest.java
+// ═══════════════════════════════════════════════════════════════════
+
+	// ─── Reconnect to a new IP address ────────────────────────────────
+	public void reconnectonip(String newipaddress) throws IOException, InterruptedException {
+		Thread.sleep(5000); // wait for camera to apply new IP
+		String newurl = "http://" + newipaddress + "/html/index.html";
+		System.out.println("Reconnecting to new IP: " + newurl);
+		driver.get(newurl);
+		loginpage.logintocamera();
+	}
+
+
+	// ─── Reconnect on a new HTTP port ─────────────────────────────────
+	public void reconnectonport(String newport) throws IOException, InterruptedException {
+		Properties pro = new Properties();
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +
+				"/src/ipcamera/resources/globaldata.properties");
+		pro.load(fis);
+		 ipaddress = System.getProperty("ipaddress") != null ?
+				System.getProperty("ipaddress") :
+				pro.getProperty("ipaddress");
+
+		Thread.sleep(5000); // wait for camera to apply new port
+		String newurl = "http://" + ipaddress + ":" + newport + "/html/index.html";
+		System.out.println("Reconnecting to new port: " + newurl);
+		driver.get(newurl);
+		loginpage.logintocamera();
+	}
+
+	// ─── Restore back to default port 80 ──────────────────────────────
+	public void restoredefaultport() throws IOException, InterruptedException {
+		Properties pro = new Properties();
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +
+				"/src/ipcamera/resources/globaldata.properties");
+		pro.load(fis);
+		 ipaddress = System.getProperty("ipaddress") != null ?
+				System.getProperty("ipaddress") :
+				pro.getProperty("ipaddress");
+
+		Thread.sleep(5000);
+		String defaulturl = "http://" + ipaddress + "/html/index.html";
+		System.out.println("Restoring to default port 80: " + defaulturl);
+		driver.get(defaulturl);
+		loginpage.logintocamera();
+	}
+
+
 	
 }

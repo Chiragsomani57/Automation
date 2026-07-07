@@ -3,6 +3,7 @@ package test;
 import java.io.IOException;
 import java.util.HashMap;
 
+import org.apache.hc.core5.http.nio.ssl.BasicServerTlsStrategy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -37,7 +38,7 @@ public class audiotest extends basetest {
     // ─────────────────────────────────────────────
     // TC01 — Verify Default Values
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups = "sanity")
     public void defaultaudio() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("defaultaudio");
@@ -406,7 +407,7 @@ public class audiotest extends basetest {
     // ─────────────────────────────────────────────
     // TC16 — Set All with G.711 a-law
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups = "sanity")
     public void setall_alaw() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("setall_alaw");
@@ -542,8 +543,34 @@ public class audiotest extends basetest {
         audiopage.setinputencoder(data.get("outputgain"));
         audiopage.clicksave();
         Assert.assertEquals(audiopage.getoutputgain(), data.get("expected"));
-    	
+
     }
+
+    @Test(groups="sanity")
+    public void cancel_all() throws IOException {
+        SoftAssert soft=new SoftAssert();
+        HashMap<String,String> data=testdata("cancel_all");
+        HashMap<String,String> data1=testdata("defaultaudio");
+        launchandopen();
+        audiopage.clickdefaultandconfirm();
+        audiopage.setinputencoder(data.get("inputencoder"));
+        audiopage.setinputgain(data.get("inputgain"));
+        audiopage.enableaudioout();
+        audiopage.setoutputgain(data.get("outputgain"));
+
+        audiopage.clickcancel();
+        soft.assertEquals(audiopage.getinputencoder(),data1.get("inputencoder"));
+        soft.assertEquals(audiopage.getinputgain(),data1.get("inputgain"));
+        soft.assertEquals(String.valueOf(audiopage.isaudiooutselected()),data1.get("audioout"));
+        soft.assertEquals(audiopage.getoutputgain(),data1.get("outputgain"));
+
+        soft.assertAll();
+
+
+
+
+    }
+  
 
     
     

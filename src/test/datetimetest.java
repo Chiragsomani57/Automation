@@ -71,7 +71,7 @@ public class datetimetest extends basetest {
     // ─────────────────────────────────────────────
     // TC02 — Set Timezone India
     // ─────────────────────────────────────────────
-    @Test
+    @Test(groups = "sanity")
     public void settimezone_india() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("settimezone_india");

@@ -34,7 +34,7 @@ public class homepageobject {
     WebElement hue;
 
     public void clickapperance() {
-        List<WebElement> elements = driver.findElements(By.id("appearance"));
+        List<WebElement> elements = driver.findElements(By.id("appearanceHome-cnfg"));
         if (!elements.isEmpty()) {
             elements.get(0).click();
         } else {

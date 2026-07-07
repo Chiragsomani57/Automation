@@ -5,49 +5,50 @@
     <listener class-name="ipcamera.testcomponent.Listeners"/>
   </listeners>
   <test thread-count="5" name="test(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
     <classes>
+      <class name="test.advancednetworktest">
+        <methods>
+          <include name="tc08_mxdns_default"/>
+          <include name="launchapplication"/>
+          <include name="tc02_upnp_default"/>
+          <include name="tc10_dot1x_default"/>
+          <include name="tc05_ddns_default"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.advancednetworktest -->
+      <class name="test.datetimetest">
+        <methods>
+          <include name="settimezone_india"/>
+          <include name="launchapplication"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.datetimetest -->
+      <class name="test.networktest">
+        <methods>
+          <include name="launchapplication"/>
+          <include name="teardown"/>
+          <include name="tc16_nas_nfs"/>
+        </methods>
+      </class> <!-- test.networktest -->
       <class name="test.streamprofiletest">
         <methods>
           <include name="defaultvalueprofile4"/>
           <include name="defaultvalueprofile3"/>
           <include name="defaultvalueprofile2"/>
-          <include name="launchapplication"/>
           <include name="defaultvalueprofile1"/>
+          <include name="launchapplication"/>
           <include name="setandsaveprofile1"/>
           <include name="setandsaveprofile3"/>
-          <include name="teardown"/>
           <include name="setandsaveprofile2"/>
+          <include name="teardown"/>
           <include name="setandsaveprofile4"/>
         </methods>
       </class> <!-- test.streamprofiletest -->
-      <class name="test.datetimetest">
-        <methods>
-          <include name="dst_europe"/>
-          <include name="ntp_disable"/>
-          <include name="defaultdatetime"/>
-          <include name="ntp_24hour"/>
-          <include name="setdatetime_normal"/>
-          <include name="bothcheckbox_enable"/>
-          <include name="dst_standard"/>
-          <include name="setviaapi_enable"/>
-          <include name="ntp_6hour"/>
-          <include name="setdatetime_max"/>
-          <include name="teardown"/>
-          <include name="defaultdst"/>
-          <include name="ntp_1hour"/>
-          <include name="ntp_12hour"/>
-          <include name="setviaonvif_disable"/>
-          <include name="settimezone_india"/>
-          <include name="setviaapi_disable"/>
-          <include name="dst_disable"/>
-          <include name="dst_australia"/>
-          <include name="launchapplication"/>
-          <include name="setviaonvif_enable"/>
-          <include name="defaultntp"/>
-          <include name="bothcheckbox_disable"/>
-          <include name="setdatetime_min"/>
-        </methods>
-      </class> <!-- test.datetimetest -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

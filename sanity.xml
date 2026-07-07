@@ -4,7 +4,7 @@
 <listeners>
 <listener class-name="ipcamera.testcomponent.Listeners"/>
 </listeners>
-  <test thread-count="5" name="test">
+  <test thread-count="2"  name="test">
 <groups>
 	<run>
 		<include name="sanity"></include>
@@ -17,6 +17,9 @@
   <class name="test.streamprofiletest"></class>
   <class name="test.datetimetest"></class>
   <class name="test.audiotest"></class>
+  <class name="test.networktest"></class>
+  <class name="test.eventservertest"></class>
+  <class name="test.advancednetworktest"></class>
   </classes>
 
 

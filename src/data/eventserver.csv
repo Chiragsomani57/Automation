@@ -1,0 +1,9 @@
+testcase,cameratype,ftpenable,ftpserver,ftpport,ftpuser,ftppassword,ftpfolder,emailenable,emailserver,emailport,emailuser,emailpassword,sendermail,encryption,receivermail,mailtimeout,tcpenable,tcpserver,tcpport,snmpenable,snmpport,snmpversion,sysname,syscontact,syslocation,accesstype,comname,trapenable,trapnotif,trapipaddr,trapport,retryattempt,retryinterval,connectionmessage
+tc01_ftp_testconnection,2mp|5mp|8mp,true,192.168.1.200,22,admin,Admin@123,uploads,,,,,,,,,,,,,,,,,,,,,,,,,,,Connection failed
+tc02_ftp_default,2mp|5mp|8mp,false,,22,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+tc03_email_testconnection,2mp|5mp|8mp,,,,,,,true,smtp.gmail.com,587,test@gmail.com,Test@123,test@gmail.com,TLS,receiver@gmail.com,30,,,,,,,,,,,,,,,,,,Connection failed
+tc04_email_default,2mp|5mp|8mp,,,,,,,false,,25,,,,None,,60,,,,,,,,,,,,,,,,,,
+tc06_tcp_default,2mp|5mp|8mp,,,,,,,,,,,,,,,,false,,8000,,,,,,,,,,,,,,,
+tc10_downloadmib,2mp|5mp|8mp,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+tc11_snmp_default,2mp|5mp|8mp,,,,,,,,,,,,,,,,,,,false,161,SNMPv3,,,,Any IP Address,,false,,,162,3,10,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -20,4 +20,6 @@ module Framework {
 	requires com.fasterxml.jackson.core;
 	requires extentreports;
 	requires org.apache.commons.csv;
+    requires java.naming;
+    requires org.apache.httpcomponents.core5.httpcore5;
 }

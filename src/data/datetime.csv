@@ -1,27 +1,27 @@
 testcase,cameratype,timezone,date,hour,minute,second,setviaonvif,setviaapi,synchronize,preferredntpserver,updatetime,dst,fwdmonth,fwdweek,fwdday,fwdtimehh,fwdtimemm,revmonth,revweek,revday,revtimehh,revtimemm
-defaultdatetime,2mp,,,,,,true,true,,,,false,,,,,,,,,,
-settimezone_india,2mp,(UTC+05:30) Chennai Kolkata Mumbai New Delhi,,,,,,,,,,,,,,,,,,,,
-settimezone_utc,2mp,"(UTC+00:00) Dublin, Edinburgh, Lisbon, London",,,,,,,,,,,,,,,,,,,,
-settimezone_us,2mp,(UTC-05:00) Eastern Time (US & Canada),,,,,,,,,,,,,,,,,,,,
-setdatetime_normal,2mp,(UTC+05:30) Chennai Kolkata Mumbai New Delhi,27-04-2026,15,30,00,true,true,,,,,,,,,,,,,,
-setdatetime_min,2mp,(UTC+05:30) Chennai Kolkata Mumbai New Delhi,01-01-2024,00,00,00,true,true,,,,,,,,,,,,,,
-setdatetime_max,2mp,(UTC+05:30) Chennai Kolkata Mumbai New Delhi,31-12-2026,23,59,59,true,true,,,,,,,,,,,,,,
-setviaonvif_enable,2mp,,,,,,true,false,,,,,,,,,,,,,,
-setviaonvif_disable,2mp,,,,,,false,false,,,,,,,,,,,,,,
-setviaapi_enable,2mp,,,,,,false,true,,,,,,,,,,,,,,
-setviaapi_disable,2mp,,,,,,false,false,,,,,,,,,,,,,,
-bothcheckbox_enable,2mp,,,,,,true,true,,,,,,,,,,,,,,
-bothcheckbox_disable,2mp,,,,,,false,false,,,,,,,,,,,,,,
-defaultntp,2mp,,,,,,,,false,,,,,,,,,,,,,
-ntp_1hour,2mp,,,,,,,,true,,1 Hour,,,,,,,,,,,
-ntp_6hour,2mp,,,,,,,,true,,6 Hours,,,,,,,,,,,
-ntp_12hour,2mp,,,,,,,,true,,12 Hours,,,,,,,,,,,
-ntp_24hour,2mp,,,,,,,,true,,24 Hours,,,,,,,,,,,
-ntp_disable,2mp,,,,,,,,false,,,,,,,,,,,,,
-defaultdst,2mp,,,,,,,,,,,false,January,First,Sunday,00,00,January,First,Sunday,00,00
-dst_standard,2mp,,,,,,,,,,,true,March,Second,Sunday,02,00,November,First,Sunday,02,00
-dst_europe,2mp,,,,,,,,,,,true,March,Last,Sunday,01,00,October,Last,Sunday,01,00
-dst_australia,2mp,,,,,,,,,,,true,October,First,Sunday,02,00,April,First,Sunday,02,00
-dst_mintime,2mp,,,,,,,,,,,true,January,First,Sunday,00,00,January,First,Sunday,00,00
-dst_maxtime,2mp,,,,,,,,,,,true,December,Last,Saturday,23,59,December,Last,Saturday,23,59
-dst_disable,2mp,,,,,,,,,,,false,,,,,,,,,,
+defaultdatetime,2mp|5mp|8mp,,,,,,true,true,,,,false,,,,,,,,,,
+settimezone_india,2mp|5mp|8mp,(UTC+05:30) Chennai Kolkata Mumbai New Delhi,,,,,,,,,,,,,,,,,,,,
+settimezone_utc,2mp|5mp|8mp,"(UTC+00:00) Dublin, Edinburgh, Lisbon, London",,,,,,,,,,,,,,,,,,,,
+settimezone_us,2mp|5mp|8mp,(UTC-05:00) Eastern Time (US & Canada),,,,,,,,,,,,,,,,,,,,
+setdatetime_normal,2mp|5mp|8mp,(UTC+05:30) Chennai Kolkata Mumbai New Delhi,27-04-2026,15,30,00,true,true,,,,,,,,,,,,,,
+setdatetime_min,2mp|5mp|8mp,(UTC+05:30) Chennai Kolkata Mumbai New Delhi,01-01-2024,00,00,00,true,true,,,,,,,,,,,,,,
+setdatetime_max,2mp|5mp|8mp,(UTC+05:30) Chennai Kolkata Mumbai New Delhi,31-12-2026,23,59,59,true,true,,,,,,,,,,,,,,
+setviaonvif_enable,2mp|5mp|8mp,,,,,,true,false,,,,,,,,,,,,,,
+setviaonvif_disable,2mp|5mp|8mp,,,,,,false,false,,,,,,,,,,,,,,
+setviaapi_enable,2mp|5mp|8mp,,,,,,false,true,,,,,,,,,,,,,,
+setviaapi_disable,2mp|5mp|8mp,,,,,,false,false,,,,,,,,,,,,,,
+bothcheckbox_enable,2mp|5mp|8mp,,,,,,true,true,,,,,,,,,,,,,,
+bothcheckbox_disable,2mp|5mp|8mp,,,,,,false,false,,,,,,,,,,,,,,
+defaultntp,2mp|5mp|8mp,,,,,,,,false,,,,,,,,,,,,,
+ntp_1hour,2mp|5mp|8mp,,,,,,,,true,,1 Hour,,,,,,,,,,,
+ntp_6hour,2mp|5mp|8mp,,,,,,,,true,,6 Hours,,,,,,,,,,,
+ntp_12hour,2mp|5mp|8mp,,,,,,,,true,,12 Hours,,,,,,,,,,,
+ntp_24hour,2mp|5mp|8mp,,,,,,,,true,,24 Hours,,,,,,,,,,,
+ntp_disable,2mp|5mp|8mp,,,,,,,,false,,,,,,,,,,,,,
+defaultdst,2mp|5mp|8mp,,,,,,,,,,,false,January,First,Sunday,00,00,January,First,Sunday,00,00
+dst_standard,2mp|5mp|8mp,,,,,,,,,,,true,March,Second,Sunday,02,00,November,First,Sunday,02,00
+dst_europe,2mp|5mp|8mp,,,,,,,,,,,true,March,Last,Sunday,01,00,October,Last,Sunday,01,00
+dst_australia,2mp|5mp|8mp,,,,,,,,,,,true,October,First,Sunday,02,00,April,First,Sunday,02,00
+dst_mintime,2mp|5mp|8mp,,,,,,,,,,,true,January,First,Sunday,00,00,January,First,Sunday,00,00
+dst_maxtime,2mp|5mp|8mp,,,,,,,,,,,true,December,Last,Saturday,23,59,December,Last,Saturday,23,59
+dst_disable,2mp|5mp|8mp,,,,,,,,,,,false,,,,,,,,,,
