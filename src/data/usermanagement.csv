@@ -1,0 +1,6 @@
+testcase,cameratype,enable,username,password,newpassword,confirmpaasword,usertype,minchars,passwordstrength,setpasswordvalidity,resettimer,lockafterattempts,maxattempts,autounlock
+tc01_adduser_index1,all,true,hello,hello,Hello@123,Hello@123,operator,,,,,,,
+tc02_adduser_index32,all,true,chirag,chirag,Chirag@123,Chirag@123,viewer,,,,,,,
+tc03_deleteuser,all,false,hello,,,,operator,,,,,,,
+tc04_useraccount_default,all,false,chirag,,,,viewer,,,,,,,
+tc05_globalpolicy_default,all,,,,,,,8,High,false,90,true,5,30

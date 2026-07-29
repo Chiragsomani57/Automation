@@ -4,6 +4,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -36,7 +38,17 @@ public class loginpageobject  {
 	
 	@FindBy(className="msg-space")
 	WebElement  errormsg;
-	
+
+
+	@FindBy(id="btncreate-password")
+	WebElement  createpassword;
+
+
+
+
+	@FindBy(id = "password1")          WebElement newpassword;     // ⚠️ verify id
+	@FindBy(id = "confirm-password")     WebElement confirmpassword;
+
 	public void logintocamera()
 	{
 		username.sendKeys(loginuser);
@@ -77,6 +89,28 @@ public class loginpageobject  {
 		String mainurl="http://"+ipaddress+"/html/main.html";
 		return mainurl;
 	}
+	public void clickoutside() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("document.activeElement.blur();");
+	}
+
+
+	public void settextbox(WebElement element, String value) {
+		element.click();
+		element.sendKeys(Keys.CONTROL + "a");
+		element.sendKeys(Keys.DELETE);
+		element.sendKeys(value);
+		clickoutside();
+	}
+
+
+	public void setnewpaasword(String value){ settextbox(newpassword, value); }
+	public void setconfimpassword(String value){ settextbox(confirmpassword, value); }
+
+	public void clicklogin(){loginbtn.click();}
+
+	public void clickcreatepassword(){createpassword.click();}
+
 	
 	
 }
