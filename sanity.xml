@@ -20,6 +20,9 @@
   <class name="test.networktest"></class>
   <class name="test.eventservertest"></class>
   <class name="test.advancednetworktest"></class>
+  <class name="test.usermanagementtest"></class>
+
+
   </classes>
 
 
