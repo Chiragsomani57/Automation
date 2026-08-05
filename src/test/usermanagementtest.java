@@ -31,19 +31,11 @@ public class usermanagementtest extends basetest {
 
     }
 
-    // ─── save + reopen ────────────────────────────
-    public void saveandreopen() {
-        userpage.clicksave();
-        userpage.switchtopanelframe();
-        userpage.clickuseraccounttab();
-        userpage.switchtoconfigframe();
-        userpage.clickuseracclink();
-    }
 
     // ══════════════════════════════════════════════
     // TC01 — Add User Index 1 (first available slot)
     // ══════════════════════════════════════════════
-    @Test
+    @Test(groups = "sanity")
     public void tc01_adduser_index1() throws IOException, InterruptedException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("tc01_adduser_index1");
@@ -91,7 +83,7 @@ public class usermanagementtest extends basetest {
     // ══════════════════════════════════════════════
     // TC02 — Add User Index 32 (max/boundary slot)
     // ══════════════════════════════════════════════
-    @Test
+    @Test(groups = "sanity")
     public void tc02_adduser_index32() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("tc02_adduser_index32");
@@ -187,7 +179,7 @@ public class usermanagementtest extends basetest {
     // ══════════════════════════════════════════════
     // TC05 — Global Policy Default
     // ══════════════════════════════════════════════
-    @Test
+    @Test(groups = "sanity")
     public void tc05_globalpolicy_default() throws IOException {
         SoftAssert soft = new SoftAssert();
         HashMap<String, String> data = testdata("tc05_globalpolicy_default");
