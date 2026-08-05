@@ -8,6 +8,7 @@ D:\automation\Automation\src\ipcamera\pageobject\loginpageobject.java
 D:\automation\Automation\src\ipcamera\pageobject\networkpageobject.java
 D:\automation\Automation\src\ipcamera\pageobject\streamprofileobject.java
 D:\automation\Automation\src\ipcamera\pageobject\templateschedulepageobject.java
+D:\automation\Automation\src\ipcamera\pageobject\usermanagementpageobject.java
 D:\automation\Automation\src\ipcamera\resources\ExtentReportsNG.java
 D:\automation\Automation\src\ipcamera\testcomponent\basetest.java
 D:\automation\Automation\src\ipcamera\testcomponent\Listeners.java
@@ -23,3 +24,4 @@ D:\automation\Automation\src\test\logintest.java
 D:\automation\Automation\src\test\networktest.java
 D:\automation\Automation\src\test\streamprofiletest.java
 D:\automation\Automation\src\test\templatescheduletest.java
+D:\automation\Automation\src\test\usermanagementtest.java

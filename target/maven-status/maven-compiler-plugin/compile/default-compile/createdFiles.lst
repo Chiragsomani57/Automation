@@ -18,8 +18,10 @@ ipcamera\pageobject\datetimepageobject.class
 test\datetimetest.class
 ipcamera\pageobject\networkpageobject.class
 ipcamera\testcomponent\retry.class
+ipcamera\pageobject\usermanagementpageobject.class
 test\advancednetworktest.class
 test\hometest.class
 test\templatescheduletest.class
 test\networktest.class
 test\audiotest.class
+test\usermanagementtest.class
